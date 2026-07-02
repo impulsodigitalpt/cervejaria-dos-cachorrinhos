@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Experiência gastronómica em Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal.">
     <title>Cervejaria dos Cachorrinhos</title>
-    <link rel="canonical" href="https://baguettiboy.github.io/cervejaria-dos-cachorrinhos/">
+    <link rel="canonical" href="https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/line-icons.css">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Cervejaria dos Cachorrinhos", "description": "Experiência gastronómica em Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal.", "telephone": "960 000 255", "address": "Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal", "url": "https://baguettiboy.github.io/cervejaria-dos-cachorrinhos/"}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Cervejaria dos Cachorrinhos", "description": "Experiência gastronómica em Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal.", "telephone": "960 000 255", "address": "Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal", "url": "https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/"}</script>
     <style>
       :root {
         --site-primary: #b91c1c;
@@ -488,6 +488,78 @@
       #testimonial .section-header p,
       #testimonial .testimonial-item h2,
       #testimonial .testimonial-item h3 { color: #fff; }
+      .restaurant-amenities {
+        background-color: var(--site-dark);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        min-height: 410px;
+        overflow: hidden;
+        position: relative;
+      }
+      .amenities-overlay {
+        background: rgba(16, 14, 13, 0.68);
+        inset: 0;
+        position: absolute;
+      }
+      .amenities-content { position: relative; z-index: 1; }
+      .amenities-heading { margin-bottom: 30px; }
+      .amenities-eyebrow {
+        color: rgba(255, 255, 255, 0.68);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 31px;
+        font-style: italic;
+        line-height: 1;
+        margin: 0 0 7px;
+      }
+      .restaurant-amenities .section-title { color: #fff; margin: 0; }
+      .amenities-divider {
+        background: rgba(255, 255, 255, 0.66);
+        display: block;
+        height: 3px;
+        margin: 24px auto 0;
+        width: 80px;
+      }
+      .amenities-list {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .amenity-item { text-align: center; width: 136px; }
+      .amenity-icon {
+        align-items: center;
+        background: rgba(255, 255, 255, 0.96);
+        border: 5px solid rgba(255, 255, 255, 0.62);
+        border-radius: 50%;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+        color: #9a9a9a;
+        display: inline-flex;
+        height: 124px;
+        justify-content: center;
+        margin-bottom: 12px;
+        width: 124px;
+      }
+      .amenity-icon svg {
+        fill: none;
+        height: 63px;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.7;
+        width: 63px;
+      }
+      .amenity-label {
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        line-height: 1.35;
+      }
       .restaurant-contact-layout {
         display: grid;
         gap: 48px;
@@ -920,6 +992,158 @@
       body[data-template="restaurant-menu-first"] .restaurant-contact-item { color: #173b30; border-color: rgba(23, 59, 48, 0.26); }
       body[data-template="restaurant-menu-first"] .restaurant-contact-item strong { color: #173b30; }
       body[data-template="restaurant-menu-first"] .copyright { background: #173b30; }
+      body[data-template^="fashion-"] {
+        background: #f7f7f4;
+        color: #232323;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body[data-template^="fashion-"] .navbar {
+        background: rgba(255, 255, 255, 0.94) !important;
+        border-bottom: 1px solid rgba(20, 20, 20, 0.12);
+        box-shadow: none;
+      }
+      body[data-template^="fashion-"] .navbar-brand .brand-name,
+      body[data-template^="fashion-"] .navbar-nav .nav-link { color: #171717 !important; }
+      body[data-template^="fashion-"] .navbar-nav .nav-link {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+      body[data-template^="fashion-"] #hero-area.hero-area-bg { background: #171717 !important; }
+      body[data-template^="fashion-"] #hero-area .hero-stage,
+      body[data-template^="fashion-"] #hero-area .img-thumb img { height: 780px; min-height: 780px; }
+      body[data-template^="fashion-"] #hero-area .img-thumb img { object-position: center 24%; }
+      body[data-template^="fashion-"] #hero-area .hero-stage::after {
+        background: linear-gradient(90deg, rgba(5, 5, 5, 0.68), rgba(5, 5, 5, 0.03) 72%);
+      }
+      body[data-template^="fashion-"] #hero-area .contents {
+        left: max(24px, calc((100% - 1140px) / 2));
+        max-width: 640px;
+        padding: 148px 24px 60px 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      body[data-template^="fashion-"] #hero-area .contents .head-title {
+        font-size: clamp(58px, 7vw, 104px);
+        font-weight: 700;
+        letter-spacing: -0.055em;
+        line-height: 0.92;
+      }
+      body[data-template^="fashion-"] .hero-kicker,
+      body[data-template^="fashion-"] .section-kicker { letter-spacing: 0.22em; text-transform: uppercase; }
+      body[data-template^="fashion-"] .btn {
+        border-radius: 0;
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        padding: 15px 24px;
+        text-transform: uppercase;
+      }
+      body[data-template^="fashion-"] .restaurant-quick-info { background: #fff; border-bottom: 1px solid #ddd; }
+      body[data-template^="fashion-"] .restaurant-quick-info a,
+      body[data-template^="fashion-"] .restaurant-quick-info .container > div { color: #222; border-color: #ddd; }
+      body[data-template^="fashion-"] .restaurant-quick-info i,
+      body[data-template^="fashion-"] .restaurant-quick-info small { color: var(--site-primary); }
+      body[data-template^="fashion-"] .section-padding { padding: 110px 0; }
+      body[data-template^="fashion-"] .section-header .section-title {
+        color: var(--site-dark);
+        font-size: clamp(38px, 5vw, 68px);
+        font-weight: 700;
+        letter-spacing: -0.045em;
+        line-height: 0.98;
+      }
+      body[data-template^="fashion-"] #blog .blog-item-wrapper,
+      body[data-template^="fashion-"] #services .services-item,
+      body[data-template^="fashion-"] .restaurant-contact-layout { border-radius: 0; box-shadow: none; }
+      body[data-template^="fashion-"] #blog .blog-item-img { aspect-ratio: 3 / 4; }
+      body[data-template^="fashion-"] #blog .blog-item-img img { height: 100%; object-fit: cover; }
+      body[data-template^="fashion-"] #blog .blog-item-text { padding: 22px 4px 12px; }
+      body[data-template^="fashion-"] #blog .blog-item-text h3 { font-size: 22px; }
+      body[data-template^="fashion-"] #services .services-item { border: 1px solid rgba(20, 20, 20, 0.14); }
+      body[data-template^="fashion-"] .reservation-banner { min-height: 560px; }
+      body[data-template^="fashion-"] .copyright { background: #111; }
+
+      body[data-template="fashion-editorial"] { background: #f3f0ea; font-family: Georgia, "Times New Roman", serif; }
+      body[data-template="fashion-editorial"] #hero-area .img-thumb { margin-left: 38%; width: 62%; }
+      body[data-template="fashion-editorial"] #hero-area .hero-stage::after {
+        background: linear-gradient(90deg, #f3f0ea 0%, rgba(243, 240, 234, 0.96) 34%, rgba(243, 240, 234, 0.02) 73%);
+      }
+      body[data-template="fashion-editorial"] #hero-area .contents { max-width: 560px; }
+      body[data-template="fashion-editorial"] #hero-area .contents .head-title,
+      body[data-template="fashion-editorial"] #hero-area .contents .hero-subtitle,
+      body[data-template="fashion-editorial"] .hero-kicker { color: #171717; }
+      body[data-template="fashion-editorial"] #hero-area .btn-border { border-color: #171717; color: #171717; }
+      body[data-template="fashion-editorial"] #hero-area .contents .head-title { font-weight: 400; }
+      body[data-template="fashion-editorial"] #about,
+      body[data-template="fashion-editorial"] #blog,
+      body[data-template="fashion-editorial"] #services { background: #f3f0ea; }
+      body[data-template="fashion-editorial"] #services .services-item { background: transparent; border-width: 0 0 1px; }
+
+      body[data-template="fashion-urban"] { background: #0b0b0b; color: #fff; }
+      body[data-template="fashion-urban"] .navbar { background: #d7ff38 !important; border: 0; }
+      body[data-template="fashion-urban"] #hero-area .hero-stage::after {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.84), transparent 70%);
+      }
+      body[data-template="fashion-urban"] #hero-area .contents .head-title {
+        font-size: clamp(72px, 10vw, 148px);
+        font-weight: 950;
+        line-height: 0.78;
+        text-transform: uppercase;
+      }
+      body[data-template="fashion-urban"] .hero-kicker { color: #d7ff38; }
+      body[data-template="fashion-urban"] .btn-common { background: #d7ff38; border-color: #d7ff38; color: #111; transform: rotate(-2deg); }
+      body[data-template="fashion-urban"] #blog,
+      body[data-template="fashion-urban"] #services,
+      body[data-template="fashion-urban"] #about,
+      body[data-template="fashion-urban"] #process,
+      body[data-template="fashion-urban"] #contact { background: #0b0b0b; }
+      body[data-template="fashion-urban"] .section-header .section-title,
+      body[data-template="fashion-urban"] #blog h3,
+      body[data-template="fashion-urban"] #services h3 a,
+      body[data-template="fashion-urban"] #contact h3,
+      body[data-template="fashion-urban"] .restaurant-contact-item strong { color: #fff; text-transform: uppercase; }
+      body[data-template="fashion-urban"] #blog p,
+      body[data-template="fashion-urban"] #services p,
+      body[data-template="fashion-urban"] #contact p,
+      body[data-template="fashion-urban"] .restaurant-contact-item { color: #aaa; }
+      body[data-template="fashion-urban"] #services .services-item { background: #151515; border-color: #363636; }
+      body[data-template="fashion-urban"] #blog .blog-item-img { border: 1px solid #3b3b3b; }
+
+      body[data-template="fashion-boutique"] { background: #fff9f6; color: #49363a; font-family: Georgia, "Times New Roman", serif; }
+      body[data-template="fashion-boutique"] .navbar { background: rgba(255, 249, 246, 0.94) !important; }
+      body[data-template="fashion-boutique"] #hero-area .img-thumb { margin-left: 42%; width: 54%; }
+      body[data-template="fashion-boutique"] #hero-area .img-thumb img { border-radius: 180px 180px 0 0; height: 680px; margin-top: 62px; min-height: 680px; }
+      body[data-template="fashion-boutique"] #hero-area { background: #f6e9e5 !important; }
+      body[data-template="fashion-boutique"] #hero-area .hero-stage::after { background: linear-gradient(90deg, #f6e9e5 0 39%, transparent 70%); }
+      body[data-template="fashion-boutique"] #hero-area .contents .head-title,
+      body[data-template="fashion-boutique"] #hero-area .contents .hero-subtitle,
+      body[data-template="fashion-boutique"] .hero-kicker { color: #4b3338; }
+      body[data-template="fashion-boutique"] #hero-area .contents .head-title { font-weight: 400; }
+      body[data-template="fashion-boutique"] #hero-area .btn-border { border-color: #4b3338; color: #4b3338; }
+      body[data-template="fashion-boutique"] #blog .blog-item-img { border-radius: 160px 160px 10px 10px; }
+      body[data-template="fashion-boutique"] #services .services-item { background: #fff; border-color: #ead7d1; border-radius: 70px 70px 12px 12px; }
+
+      body[data-template="fashion-essential"] { background: #f5f5f2; }
+      body[data-template="fashion-essential"] #hero-area .contents .head-title { max-width: 720px; }
+      body[data-template="fashion-essential"] #services .services-item { background: #fff; min-height: 210px; padding: 34px; }
+      body[data-template="fashion-essential"] #blog { background: #fff; }
+      body[data-template="fashion-essential"] #blog .blog-item-img { aspect-ratio: 4 / 5; }
+      body[data-template="fashion-essential"] .btn { border-radius: 3px; }
+
+      body[data-template="fashion-kids"] { background: #fffdf3; color: #37325e; }
+      body[data-template="fashion-kids"] .navbar { background: rgba(255, 253, 243, 0.95) !important; }
+      body[data-template="fashion-kids"] #hero-area.hero-area-bg { background: #fff4b8 !important; padding: 86px 24px 24px; }
+      body[data-template="fashion-kids"] #hero-area .hero-stage { border-radius: 44px; overflow: hidden; }
+      body[data-template="fashion-kids"] #hero-area .contents .head-title { font-weight: 900; line-height: 0.9; }
+      body[data-template="fashion-kids"] .btn { border-radius: 999px; }
+      body[data-template="fashion-kids"] #services .services-item,
+      body[data-template="fashion-kids"] #blog .blog-item-wrapper { border-radius: 28px; overflow: hidden; }
+      body[data-template="fashion-kids"] #services .col-md-6:nth-child(3n + 1) .services-item { background: #fff1a8; }
+      body[data-template="fashion-kids"] #services .col-md-6:nth-child(3n + 2) .services-item { background: #d9f1e5; }
+      body[data-template="fashion-kids"] #services .col-md-6:nth-child(3n) .services-item { background: #f9dce0; }
+      body[data-template="fashion-kids"] #blog .blog-item-img { aspect-ratio: 1 / 1.15; }
+      body[data-template="fashion-kids"] .reservation-banner { border: 14px solid #fff4b8; border-radius: 38px; overflow: hidden; }
       @media (max-width: 767.98px) {
         .navbar .container { min-height: 62px; }
         .restaurant-menu-toggle {
@@ -989,6 +1213,18 @@
         #about .feature-bg { min-height: auto; }
         .reservation-banner { min-height: 360px; }
         .reservation-banner .video-promo-content h2 { font-size: 30px; }
+        .restaurant-amenities { min-height: 0; }
+        .amenities-heading { margin-bottom: 26px; }
+        .amenities-eyebrow { font-size: 27px; }
+        .amenities-list { gap: 22px 16px; }
+        .amenity-item { width: 104px; }
+        .amenity-icon {
+          border-width: 3px;
+          height: 88px;
+          width: 88px;
+        }
+        .amenity-icon svg { height: 44px; width: 44px; }
+        .amenity-label { font-size: 12px; }
         .restaurant-contact-layout {
           gap: 28px;
           grid-template-columns: 1fr;
@@ -1057,6 +1293,34 @@
         body[data-template="restaurant-menu-first"] #hero-area .contents .head-title { font-size: 49px; }
         body[data-template="restaurant-menu-first"] .section-padding { padding: 70px 0; }
         body[data-template="restaurant-menu-first"] .reservation-banner { border-width: 10px; border-radius: 28px; }
+        body[data-template^="fashion-"] #navbarCollapse { background: rgba(255, 255, 255, 0.98); border-color: #ddd; }
+        body[data-template^="fashion-"] .restaurant-menu-toggle,
+        body[data-template^="fashion-"] .top-nav-collapse .restaurant-menu-toggle { border-color: #333; color: #171717; }
+        body[data-template^="fashion-"] #navbarCollapse .nav-link { color: #171717 !important; }
+        body[data-template^="fashion-"] #hero-area .hero-stage,
+        body[data-template^="fashion-"] #hero-area .img-thumb img { height: 650px; min-height: 650px; }
+        body[data-template^="fashion-"] #hero-area .contents {
+          bottom: 0;
+          left: 0;
+          max-width: none;
+          padding: 96px 22px 48px;
+          top: auto;
+          transform: none;
+          width: 100%;
+        }
+        body[data-template^="fashion-"] #hero-area .contents .head-title { font-size: 54px; }
+        body[data-template^="fashion-"] .section-padding { padding: 72px 0; }
+        body[data-template="fashion-editorial"] #hero-area .img-thumb,
+        body[data-template="fashion-boutique"] #hero-area .img-thumb { margin: 0; width: 100%; }
+        body[data-template="fashion-editorial"] #hero-area .hero-stage::after,
+        body[data-template="fashion-boutique"] #hero-area .hero-stage::after {
+          background: linear-gradient(0deg, rgba(243, 240, 234, 0.98) 0%, rgba(243, 240, 234, 0.42) 65%, transparent 100%);
+        }
+        body[data-template="fashion-boutique"] #hero-area .img-thumb img { border-radius: 0; height: 650px; margin: 0; min-height: 650px; }
+        body[data-template="fashion-urban"] #hero-area .contents .head-title { font-size: 64px; }
+        body[data-template="fashion-kids"] #hero-area.hero-area-bg { padding: 74px 10px 10px; }
+        body[data-template="fashion-kids"] #hero-area .hero-stage { border-radius: 24px; }
+        body[data-template="fashion-kids"] #hero-area .contents .head-title { font-size: 50px; }
       }
     </style>
   </head>
@@ -1081,6 +1345,7 @@
               <li class="nav-item"><a class="nav-link page-scroll" href="#highlights">Reservas</a></li>
               <li class="nav-item"><a class="nav-link page-scroll" href="#testimonial">Opiniões</a></li>
               <li class="nav-item"><a class="nav-link page-scroll" href="#counter">Avaliações</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#amenities">Comodidades</a></li>
               <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contacto</a></li>
             </ul>
           </div>
@@ -1385,6 +1650,43 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="amenities" class="restaurant-amenities section-padding" style="background-image: url('assets/generated/web-about-1782668872290.jpg'); background-position: center center; background-size: cover;">
+      <div class="amenities-overlay"></div>
+      <div class="container amenities-content">
+        <div class="amenities-heading text-center">
+          <p class="amenities-eyebrow">Os nossos</p>
+          <h2 class="section-title">Serviços</h2>
+          <span class="amenities-divider" aria-hidden="true"></span>
+        </div>
+        <ul class="amenities-list">
+          
+          <li class="amenity-item wow fadeInUp" data-wow-delay="0.2s">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false"><rect x="4" y="5" width="16" height="7" rx="2"/><path d="M7 9h10M8 16c0-1 1-1 1-2M12 18c0-2 1-2 1-4M16 16c0-1 1-1 1-2"/></svg>
+            </span>
+            <span class="amenity-label">Ar condicionado</span>
+          </li>
+          <li class="amenity-item wow fadeInUp" data-wow-delay="0.3s">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M4 10c2-5 14-5 16 0H4ZM12 10v9M8 19h8M6 14v5M18 14v5"/></svg>
+            </span>
+            <span class="amenity-label">Mesas exteriores</span>
+          </li>
+          <li class="amenity-item wow fadeInUp" data-wow-delay="0.4s">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M7 8h10l1 12H6L7 8ZM9 8a3 3 0 0 1 6 0"/></svg>
+            </span>
+            <span class="amenity-label">Takeaway</span>
+          </li>
+          <li class="amenity-item wow fadeInUp" data-wow-delay="0.5s">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M3 9a14 14 0 0 1 18 0M6 13a9 9 0 0 1 12 0M9.5 16.5a4 4 0 0 1 5 0"/><circle cx="12" cy="20" r="1"/></svg>
+            </span>
+            <span class="amenity-label">Wi-Fi gratuito</span>
+          </li>
+        </ul>
       </div>
     </section>
     <section id="contact" class="section-padding">
