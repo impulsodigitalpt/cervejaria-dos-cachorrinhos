@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-22T12:22:55+00:00",
+  "business": {
+    "name": "Cervejaria Dos Cachorrinhos",
+    "logo": ""
+  },
+  "settings": {
+    "enabled": true,
+    "template": "menu-pop",
+    "title": "Menu",
+    "subtitle": "Descobre a nossa carta.",
+    "currency": "EUR",
+    "locale": "pt-PT",
+    "note": "Preços com IVA incluído à taxa legal em vigor.",
+    "showUnavailable": true
+  },
+  "theme": {
+    "primary": "#b91c1c",
+    "secondary": "#ea580c",
+    "accent": "#facc15",
+    "dark": "#2b160b"
+  },
+  "categories": [
+    {
+      "id": "entradas",
+      "name": "Entradas",
+      "description": "",
+      "enabled": true,
+      "items": []
+    },
+    {
+      "id": "pratos-principais",
+      "name": "Pratos principais",
+      "description": "",
+      "enabled": true,
+      "items": []
+    },
+    {
+      "id": "sobremesas",
+      "name": "Sobremesas",
+      "description": "",
+      "enabled": true,
+      "items": []
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas",
+      "description": "",
+      "enabled": true,
+      "items": []
+    }
+  ]
+}

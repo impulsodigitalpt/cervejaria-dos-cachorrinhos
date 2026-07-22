@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#b45332">
+    <meta name="description" content="Menu digital">
+    <title>Menu digital</title>
+    <link rel="stylesheet" href="menu.css">
+  </head>
+  <body class="is-loading">
+    <a class="skip-link" href="#menu-content">Saltar para o menu</a>
+
+    <header class="menu-hero">
+      <div class="menu-shell">
+        <a class="back-link" id="site-link" href="../" aria-label="Voltar ao website">
+          <span aria-hidden="true">&#8592;</span>
+          <span>Website</span>
+        </a>
+        <div class="menu-brand">
+          <img id="business-logo" alt="" hidden>
+          <span class="brand-mark" id="brand-mark" aria-hidden="true"></span>
+          <span id="business-name">Menu digital</span>
+        </div>
+        <div class="menu-hero-copy">
+          <p class="eyebrow">Menu digital</p>
+          <h1 id="menu-title">A nossa carta</h1>
+          <p id="menu-subtitle">Descobre o que preparámos para ti.</p>
+        </div>
+        <div class="menu-meta">
+          <span id="menu-updated">Atualizado recentemente</span>
+          <span class="live-pill"><i aria-hidden="true"></i> Menu atual</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="category-bar" aria-label="Categorias do menu">
+      <div class="menu-shell category-scroll" id="category-nav"></div>
+    </nav>
+
+    <main id="menu-content" class="menu-shell">
+      <section class="menu-tools" aria-label="Pesquisar no menu">
+        <label class="search-field">
+          <span class="sr-only">Pesquisar prato ou bebida</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <input id="menu-search" type="search" autocomplete="off" placeholder="Pesquisar no menu...">
+        </label>
+        <button class="clear-search" id="clear-search" type="button" hidden>Limpar pesquisa</button>
+      </section>
+
+      <div class="menu-status" id="menu-status" role="status">
+        <span class="status-spinner" aria-hidden="true"></span>
+        <p>A carregar o menu...</p>
+      </div>
+      <div id="menu-sections" class="menu-sections" hidden></div>
+    </main>
+
+    <footer class="menu-footer">
+      <div class="menu-shell">
+        <p><strong id="footer-business-name">Menu digital</strong><span id="footer-note">Preços com IVA incluído à taxa legal em vigor.</span></p>
+        <a href="../">Visitar website</a>
+      </div>
+    </footer>
+
+    <script>window.__MENU_BOOTSTRAP__ = {"version":1,"updatedAt":"2026-07-22T12:22:55+00:00","business":{"name":"Cervejaria Dos Cachorrinhos","logo":""},"settings":{"enabled":true,"template":"menu-pop","title":"Menu","subtitle":"Descobre a nossa carta.","currency":"EUR","locale":"pt-PT","note":"Preços com IVA incluído à taxa legal em vigor.","showUnavailable":true},"theme":{"primary":"#b91c1c","secondary":"#ea580c","accent":"#facc15","dark":"#2b160b"},"categories":[{"id":"entradas","name":"Entradas","description":"","enabled":true,"items":[]},{"id":"pratos-principais","name":"Pratos principais","description":"","enabled":true,"items":[]},{"id":"sobremesas","name":"Sobremesas","description":"","enabled":true,"items":[]},{"id":"bebidas","name":"Bebidas","description":"","enabled":true,"items":[]}]};</script>
+    <script src="menu.js"></script>
+  </body>
+</html>

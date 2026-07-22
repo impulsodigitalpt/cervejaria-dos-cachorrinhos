@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="theme-color" content="#17221f">
+    <title>Gestão do menu digital</title>
+    <link rel="stylesheet" href="backoffice.css">
+  </head>
+  <body>
+    <main class="login-view" id="login-view">
+      <section class="login-card" aria-labelledby="login-title">
+        <div class="login-brand"><span class="brand-symbol">ID</span><span>Impulso Digital</span></div>
+        <div class="login-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16v14H4zM8 6V4h8v2M8 11h8M8 15h5"></path></svg>
+        </div>
+        <p class="eyebrow">Backoffice do restaurante</p>
+        <h1 id="login-title">Gerir menu digital</h1>
+        <p class="login-copy">Entra com o PIN entregue com o website para atualizar categorias, pratos, preços e fotografias.</p>
+        <form id="login-form">
+          <label class="field-label" for="pin-input">PIN de acesso</label>
+          <div class="pin-field">
+            <input id="pin-input" type="password" inputmode="numeric" autocomplete="current-password" minlength="4" maxlength="10" required placeholder="••••••">
+            <button id="toggle-pin" type="button" aria-label="Mostrar PIN">Mostrar</button>
+          </div>
+          <p class="form-error" id="login-error" role="alert" hidden></p>
+          <button class="button primary wide" type="submit">Entrar no menu</button>
+        </form>
+        <p class="security-note"><strong>Nota:</strong> em alojamento estático, o PIN evita apenas acesso casual. A publicação online exige autorização do repositório GitHub.</p>
+        <a class="back-to-site" href="../">&#8592; Voltar ao website</a>
+      </section>
+    </main>
+
+    <div class="app-view" id="app-view" hidden>
+      <header class="app-header">
+        <a class="app-brand" href="../">
+          <span class="brand-symbol">ID</span>
+          <span><strong id="header-business-name">Menu digital</strong><small>Gestão da carta</small></span>
+        </a>
+        <div class="header-status" id="save-status"><i></i><span>Sem alterações</span></div>
+        <div class="header-actions">
+          <a class="button subtle" id="open-menu-link" href="../menu/" target="_blank" rel="noopener">Ver menu</a>
+          <button class="button subtle" type="button" data-action="open-qr">QR Code</button>
+          <button class="button primary" type="button" data-action="save">Guardar</button>
+          <button class="button publish" type="button" data-action="open-publish">Publicar</button>
+          <button class="icon-button" type="button" data-action="logout" aria-label="Terminar sessão" title="Terminar sessão">
+            <svg viewBox="0 0 24 24"><path d="M10 4H5v16h5M15 8l4 4-4 4M19 12H9"></path></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="app-shell">
+        <aside class="category-panel">
+          <div class="panel-heading">
+            <div><span class="eyebrow">Estrutura</span><h2>Categorias</h2></div>
+            <button class="round-add" type="button" data-action="add-category" aria-label="Adicionar categoria">+</button>
+          </div>
+          <p class="panel-intro">Organiza as secções pela ordem em que aparecem no menu.</p>
+          <div class="category-list" id="category-list"></div>
+          <div class="category-empty" id="category-empty" hidden>
+            <p>Ainda não há categorias.</p>
+            <button class="button primary wide" type="button" data-action="add-category">Criar primeira categoria</button>
+          </div>
+
+          <details class="settings-card">
+            <summary>Definições do menu</summary>
+            <div class="settings-fields">
+              <label><span>Título</span><input type="text" data-setting="title" maxlength="80"></label>
+              <label><span>Subtítulo</span><textarea data-setting="subtitle" rows="3" maxlength="220"></textarea></label>
+              <label><span>Estilo visual</span>
+                <select data-setting="template">
+                  <option value="menu-classic">Bistrô — acolhedor</option>
+                  <option value="menu-editorial">Editorial — sofisticado</option>
+                  <option value="menu-pop">Pop — energético</option>
+                </select>
+              </label>
+              <label><span>Moeda</span>
+                <select data-setting="currency">
+                  <option value="EUR">Euro (€)</option>
+                  <option value="USD">Dólar ($)</option>
+                  <option value="GBP">Libra (£)</option>
+                </select>
+              </label>
+              <label class="check-field"><input type="checkbox" data-setting="showUnavailable"><span>Mostrar itens indisponíveis</span></label>
+            </div>
+          </details>
+
+          <div class="backup-actions">
+            <button type="button" data-action="export">Descarregar cópia JSON</button>
+            <button type="button" data-action="import">Importar cópia</button>
+            <input id="import-file" type="file" accept="application/json,.json" hidden>
+          </div>
+        </aside>
+
+        <main class="items-panel" id="items-panel">
+          <div class="items-empty-state" id="no-category-state">
+            <span class="empty-icon" aria-hidden="true">&#9783;</span>
+            <h1>Começa pelas categorias</h1>
+            <p>Cria uma categoria como Entradas, Pratos principais, Bebidas ou Sobremesas.</p>
+            <button class="button primary" type="button" data-action="add-category">Adicionar categoria</button>
+          </div>
+
+          <div id="category-workspace" hidden>
+            <div class="workspace-heading">
+              <div>
+                <p class="eyebrow">Categoria selecionada</p>
+                <h1 id="workspace-title">Categoria</h1>
+                <p id="workspace-description"></p>
+              </div>
+              <div class="workspace-actions">
+                <button class="button subtle" type="button" data-action="edit-category">Editar categoria</button>
+                <button class="button primary" type="button" data-action="add-item">+ Adicionar item</button>
+              </div>
+            </div>
+            <div class="items-summary"><strong id="item-count">0 itens</strong><span>Usa as setas para alterar a ordem apresentada.</span></div>
+            <div class="item-list" id="item-list"></div>
+            <div class="items-empty" id="items-empty" hidden>
+              <span aria-hidden="true">&#10022;</span>
+              <h2>Esta categoria está vazia</h2>
+              <p>Adiciona o primeiro prato, bebida ou opção desta categoria.</p>
+              <button class="button primary" type="button" data-action="add-item">Adicionar primeiro item</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <dialog class="modal" id="category-dialog">
+      <form method="dialog" id="category-form">
+        <div class="modal-heading"><div><p class="eyebrow">Estrutura do menu</p><h2 id="category-dialog-title">Nova categoria</h2></div><button class="modal-close" value="cancel" aria-label="Fechar">&#215;</button></div>
+        <input id="category-id" type="hidden">
+        <label class="field-label">Nome da categoria<input id="category-name" type="text" required maxlength="60" placeholder="Ex: Pratos principais"></label>
+        <label class="field-label">Descrição opcional<textarea id="category-description" rows="3" maxlength="180" placeholder="Uma frase curta para apresentar esta secção."></textarea></label>
+        <label class="check-field modal-check"><input id="category-enabled" type="checkbox" checked><span>Categoria visível no menu público</span></label>
+        <div class="modal-actions"><button class="button subtle" value="cancel">Cancelar</button><button class="button primary" id="category-submit" value="default">Guardar categoria</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal item-modal" id="item-dialog">
+      <form method="dialog" id="item-form">
+        <div class="modal-heading"><div><p class="eyebrow">Item do menu</p><h2 id="item-dialog-title">Novo item</h2></div><button class="modal-close" value="cancel" aria-label="Fechar">&#215;</button></div>
+        <input id="item-id" type="hidden">
+        <div class="item-form-grid">
+          <div class="item-form-main">
+            <label class="field-label">Nome<input id="item-name" type="text" required maxlength="90" placeholder="Ex: Arroz de polvo"></label>
+            <label class="field-label">Descrição<textarea id="item-description" rows="4" maxlength="320" placeholder="Ingredientes, acompanhamento ou uma descrição curta."></textarea></label>
+            <div class="two-fields">
+              <label class="field-label">Preço<input id="item-price" type="number" inputmode="decimal" min="0" max="99999" step="0.01" placeholder="0,00"></label>
+              <label class="field-label">Etiquetas<input id="item-tags" type="text" maxlength="120" placeholder="Vegano, Picante"></label>
+            </div>
+            <div class="check-row">
+              <label class="check-field"><input id="item-available" type="checkbox" checked><span>Disponível</span></label>
+              <label class="check-field"><input id="item-featured" type="checkbox"><span>Sugestão da casa</span></label>
+              <label class="check-field"><input id="item-enabled" type="checkbox" checked><span>Visível</span></label>
+            </div>
+          </div>
+          <div class="image-upload-card">
+            <div class="image-preview" id="item-image-preview"><span>Sem fotografia</span></div>
+            <label class="button subtle wide image-upload-button">Escolher fotografia<input id="item-image" type="file" accept="image/jpeg,image/png,image/webp" hidden></label>
+            <button class="text-button danger-text" id="remove-item-image" type="button">Remover fotografia</button>
+            <p>JPG, PNG ou WebP. A imagem é otimizada antes de guardar.</p>
+          </div>
+        </div>
+        <fieldset class="allergen-fieldset"><legend>Alergénios</legend><div class="allergen-grid" id="allergen-grid"></div></fieldset>
+        <div class="modal-actions"><button class="button subtle" value="cancel">Cancelar</button><button class="button primary" id="item-submit" value="default">Guardar item</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal publish-modal" id="publish-dialog">
+      <form method="dialog" id="publish-form">
+        <div class="modal-heading"><div><p class="eyebrow">Colocar online</p><h2>Publicar alterações</h2></div><button class="modal-close" value="cancel" aria-label="Fechar">&#215;</button></div>
+        <div class="publish-summary"><span class="publish-icon" aria-hidden="true">&#8593;</span><div><strong id="publish-repository">Repositório GitHub</strong><p>O menu público será atualizado através de uma alteração no ficheiro <code>menu/menu-data.json</code>.</p></div></div>
+        <label class="field-label">Token GitHub com acesso a este repositório<input id="github-token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_..."></label>
+        <p class="security-warning"><strong>Credencial temporária:</strong> é usada apenas nesta publicação, fica em memória e desaparece ao fechar ou atualizar a página. Limita-a a este repositório com a permissão <code>Contents: write</code>. <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Criar token fine-grained no GitHub</a>. Para produção, prefere uma integração GitHub App.</p>
+        <p class="form-error" id="publish-error" role="alert" hidden></p>
+        <div class="modal-actions"><button class="button subtle" value="cancel">Cancelar</button><button class="button publish" id="publish-submit" value="default">Publicar agora</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal qr-modal" id="qr-dialog">
+      <form method="dialog">
+        <div class="modal-heading no-print"><div><p class="eyebrow">Materiais de mesa</p><h2>QR Code do menu</h2></div><button class="modal-close" value="cancel" aria-label="Fechar">&#215;</button></div>
+        <div class="qr-print-sheet" id="qr-print-sheet">
+          <p class="qr-kicker">Descobre a nossa carta</p>
+          <h2 id="qr-business-name">Menu digital</h2>
+          <div class="qr-code" id="qr-code" aria-label="QR Code para abrir o menu"></div>
+          <p class="qr-instruction">Lê o QR Code com a câmara do telemóvel</p>
+          <p class="qr-url" id="qr-url"></p>
+        </div>
+        <div class="modal-actions no-print"><button class="button subtle" value="cancel">Fechar</button><button class="button subtle" id="download-qr" type="button">Descarregar PNG</button><button class="button primary" id="print-qr" type="button">Imprimir</button></div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script>window.__BACKOFFICE_BOOTSTRAP__ = {"businessName":"Cervejaria Dos Cachorrinhos","menuUrl":"https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/menu/","siteUrl":"https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/","slug":"cervejaria-dos-cachorrinhos","accessPinHash":"6215e6eab9ae7301c0d8bce2814b9f7b667e136f412a8e589a575de5fc946725","github":{"owner":"impulsodigitalpt","repo":"cervejaria-dos-cachorrinhos","branch":"main"},"menuDataPath":"../menu/menu-data.json","apiPath":"/api/sites/cervejaria-dos-cachorrinhos/menu"};</script>
+    <script src="qrcode.min.js"></script>
+    <script src="backoffice.js"></script>
+  </body>
+</html>
