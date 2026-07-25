@@ -3,8 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Experiência gastronómica em Estr. Da Circunvalação 7938C, 4200-162 Porto, Portugal.">
-    <title>Cervejaria dos Cachorrinhos</title>
+    <meta name="description" content="Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cervejaria dos Cachorrinhos | Petiscos no Porto">
+    <meta property="og:description" content="Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cervejaria dos Cachorrinhos | Petiscos no Porto">
+    <meta name="twitter:description" content="Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.">
+    <meta property="og:image" content="https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/assets/generated/og-cervejaria-dos-cachorrinhos.png">
+    <meta name="twitter:image" content="https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/assets/generated/og-cervejaria-dos-cachorrinhos.png">
+    <meta name="theme-color" content="#2b160b">
+    <title>Cervejaria dos Cachorrinhos | Petiscos no Porto</title>
     <link rel="canonical" href="https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -16,7 +25,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Cervejaria dos Cachorrinhos", "description": "Experiência gastronómica em Estr. Da Circunvalação 7938C, 4200-162 Porto, Portugal.", "telephone": "960 000 255", "address": "Estr. Da Circunvalação 7938C, 4200-162 Porto, Portugal", "url": "https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/", "hasMenu": "https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/menu/"}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Cervejaria dos Cachorrinhos", "description": "Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.", "telephone": "960 000 255", "address": {"@type": "PostalAddress", "streetAddress": "Estrada da Circunvalação 7938C", "postalCode": "4200-162", "addressLocality": "Porto", "addressCountry": "PT"}, "url": "https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/", "image": "https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/assets/generated/og-cervejaria-dos-cachorrinhos.png", "priceRange": "€€", "servesCuisine": ["Portuguesa", "Petiscos", "Francesinhas"], "openingHours": ["Tu-Sa 12:00-00:00", "Su 16:00-00:00"], "hasMenu": "https://impulsodigitalpt.github.io/cervejaria-dos-cachorrinhos/menu/"}</script>
     <style>
       :root {
         --site-primary: #b91c1c;
@@ -48,6 +57,7 @@
         justify-content: center;
         width: 80px;
       }
+      .mobile-action-bar { display: none; }
       .navbar {
         background: rgba(43, 22, 11, 0.78) !important;
         backdrop-filter: blur(10px);
@@ -1278,7 +1288,65 @@
       body[data-template="fashion-kids"] #services .col-md-6:nth-child(3n) .services-item { background: #f9dce0; }
       body[data-template="fashion-kids"] #blog .blog-item-img { aspect-ratio: 1 / 1.15; }
       body[data-template="fashion-kids"] .reservation-banner { border: 14px solid #fff4b8; border-radius: 38px; overflow: hidden; }
+
+      body[data-template^="institutional-"] { background: #f7fafc; color: #263746; }
+      body[data-template^="institutional-"] .navbar { background: rgba(7, 26, 45, 0.94) !important; }
+      body[data-template^="institutional-"] .top-nav-collapse { background: rgba(7, 26, 45, 0.98) !important; }
+      body[data-template^="institutional-"] #hero-area .hero-stage,
+      body[data-template^="institutional-"] #hero-area .img-thumb img { min-height: 720px; }
+      body[data-template^="institutional-"] #hero-area .contents .head-title { max-width: 760px; font-size: clamp(44px, 7vw, 82px); line-height: .98; }
+      body[data-template^="institutional-"] .btn { border-radius: 999px; }
+      body[data-template^="institutional-"] #services .services-item { border: 1px solid rgba(11, 120, 170, .15); border-radius: 22px; box-shadow: 0 18px 55px rgba(7, 26, 45, .08); }
+      body[data-template^="institutional-"] #blog .blog-item-wrapper { border-radius: 22px; overflow: hidden; box-shadow: 0 18px 55px rgba(7, 26, 45, .08); }
+      body[data-template^="institutional-"] .restaurant-contact-layout { border-radius: 26px; }
+      body[data-template^="institutional-"] .copyright { background: #071a2d; }
+
+      body[data-template="institutional-modern"] #hero-area.hero-area-bg { background: #071a2d !important; }
+      body[data-template="institutional-modern"] #hero-area .hero-stage::after { background: linear-gradient(90deg, rgba(7,26,45,.96) 0 40%, rgba(7,26,45,.26) 78%, transparent); }
+      body[data-template="institutional-modern"] .hero-kicker { color: #69e6aa; }
+      body[data-template="institutional-modern"] .btn-common { background: #35d58e; border-color: #35d58e; color: #071a2d; }
+
+      body[data-template="institutional-corporate"] { background: #f4f7fa; }
+      body[data-template="institutional-corporate"] #hero-area .contents .head-title { font-size: clamp(42px, 6vw, 70px); }
+      body[data-template="institutional-corporate"] #services .services-item,
+      body[data-template="institutional-corporate"] #blog .blog-item-wrapper { border-radius: 6px; box-shadow: 0 10px 30px rgba(24,50,75,.08); }
+      body[data-template="institutional-corporate"] .btn { border-radius: 4px; }
+
+      body[data-template="institutional-studio"] { background: #f4efe7; color: #211b2b; }
+      body[data-template="institutional-studio"] #hero-area .contents .head-title { font-weight: 900; letter-spacing: -.04em; }
+      body[data-template="institutional-studio"] #hero-area .hero-stage::after { background: linear-gradient(90deg, rgba(33,27,43,.92) 0 46%, rgba(33,27,43,.18) 82%); }
+      body[data-template="institutional-studio"] #services .services-item,
+      body[data-template="institutional-studio"] #blog .blog-item-wrapper { border-radius: 0; border: 2px solid #211b2b; box-shadow: 10px 10px 0 #ff7257; }
+      body[data-template="institutional-studio"] .btn { border-radius: 999px; }
       @media (max-width: 767.98px) {
+        body { padding-bottom: 70px; }
+        .mobile-action-bar {
+          align-items: stretch;
+          background: rgba(3, 4, 4, 0.97);
+          border-top: 1px solid rgba(255, 255, 255, 0.16);
+          bottom: 0;
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          left: 0;
+          position: fixed;
+          right: 0;
+          z-index: 9999;
+        }
+        .mobile-action-bar a {
+          align-items: center;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          font-size: 10px;
+          font-weight: 700;
+          gap: 3px;
+          justify-content: center;
+          min-height: 64px;
+          padding: 7px 4px;
+          text-align: center;
+        }
+        .mobile-action-bar a + a { border-left: 1px solid rgba(255, 255, 255, 0.12); }
+        .mobile-action-bar i { color: var(--site-accent); font-size: 20px; }
         .navbar .container { min-height: 62px; }
         .restaurant-menu-toggle {
           align-items: center;
@@ -1477,14 +1545,9 @@
           <div class="navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
               <li class="nav-item active"><a class="nav-link page-scroll" href="#hero-area">Início</a></li>
-              <li class="nav-item"><a class="nav-link page-scroll" href="#about">A casa</a></li>
-              <li class="nav-item"><a class="nav-link page-scroll" href="#process">Visita</a></li>
-              <li class="nav-item"><a class="nav-link page-scroll" href="#blog">Especialidades</a></li>
-              <li class="nav-item"><a class="nav-link page-scroll" href="#services">Menu</a></li>
-              <li class="nav-item"><a class="nav-link page-scroll" href="#highlights">Reservas</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#blog">Sabores</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#about">Sobre nós</a></li>
               <li class="nav-item"><a class="nav-link page-scroll" href="#testimonial">Opiniões</a></li>
-              <li class="nav-item"><a class="nav-link page-scroll" href="#counter">Avaliações</a></li>
-              <li class="nav-item"><a class="nav-link page-scroll" href="#clients">Google Maps</a></li>
               <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contacto</a></li>
               <li class="nav-item nav-item-digital-menu"><a class="nav-link" href="menu/index.html">Menu digital</a></li>
             </ul>
@@ -1492,25 +1555,25 @@
         </div>
       </nav>
 
-      <div id="hero-area" class="hero-area-bg" style="background-image: url('assets/generated/web-heroSlides-0-1782668870501.jpg'); background-position: center center; background-size: cover;">
+      <div id="hero-area" class="hero-area-bg" style="background-image: url('assets/generated/web-heroSlides-2-1782668871334.webp'); background-position: center center; background-size: cover;">
         <div class="container-fluid padding-none">
           <div class="row">
             <div class="col-md-12 col-sm-12">
               <div class="hero-stage">
                 <div class="img-thumb text-center">
                   <div class="hero-carousel" data-hero-carousel data-interval="5000">
-                <div class="hero-slide is-active"><img class="img-fluid" src="assets/generated/web-heroSlides-0-1782668870501.jpg" alt="Cervejaria dos Cachorrinhos"></div>
-                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-1-1782668870857.jpg" alt="Cervejaria dos Cachorrinhos"></div>
-                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-2-1782668871334.jpg" alt="Cervejaria dos Cachorrinhos"></div>
-                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-3-1782668871873.jpg" alt="Cervejaria dos Cachorrinhos"></div>
+                <div class="hero-slide is-active"><img class="img-fluid" src="assets/generated/web-heroSlides-2-1782668871334.webp" alt="Cervejaria dos Cachorrinhos" fetchpriority="high" decoding="async"></div>
+                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-1-1782668870857.webp" alt="Cervejaria dos Cachorrinhos" loading="lazy" decoding="async"></div>
+                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-0-1782668870501.webp" alt="Cervejaria dos Cachorrinhos" loading="lazy" decoding="async"></div>
+                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-3-1782668871873.webp" alt="Cervejaria dos Cachorrinhos" loading="lazy" decoding="async"></div>
                   </div>
                 </div>
                 <div class="contents">
                   <p class="hero-kicker">Restaurante</p>
-                  <h1 class="head-title">Cervejaria dos Cachorrinhos</h1>
-                  <p class="hero-subtitle">Experiência gastronómica em Estr. Da Circunvalação 7938C, 4200-162 Porto, Portugal.</p>
+                  <h1 class="head-title">Cachorrinhos, francesinhas e petiscos no Porto</h1>
+                  <p class="hero-subtitle">Sabores generosos, cerveja fresca e um ambiente descontraído na Estrada da Circunvalação.</p>
                   <div class="header-button">
-                    <a href="#contact" class="btn btn-common">Reservar ou contactar</a>
+                    <a href="#contact" class="btn btn-common">Reservar pelo WhatsApp</a>
                     <a href="menu/index.html" class="btn btn-border">Ver menu</a>
                   </div>
                 </div>
@@ -1524,15 +1587,50 @@
 
     <main id="main-content">
 
+    <section id="blog" class="section-padding bg-gray">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Os sabores que pedem uma visita</h2>
+          <p>Três clássicos para abrir o apetite antes de consultar a carta completa.</p>
+        </div>
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
+            <div class="blog-item-wrapper no-image wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text">
+                <h3>Cachorrinho</h3>
+                <p>Pão crocante, salsicha fina e queijo derretido — simples ou com molho especial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
+            <div class="blog-item-wrapper no-image wow fadeInUp" data-wow-delay="0.5s">
+              <div class="blog-item-text">
+                <h3>Francesinha</h3>
+                <p>Um clássico portuense generoso, disponível com ou sem ovo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
+            <div class="blog-item-wrapper no-image wow fadeInUp" data-wow-delay="0.7s">
+              <div class="blog-item-text">
+                <h3>Batata fina e crocante</h3>
+                <p>O acompanhamento que completa os cachorrinhos, pregos e francesinhas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="text-wrapper">
               <div>
-                <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">Sobre Cervejaria dos Cachorrinhos</h2>
-                <p class="mb-4">Na Estrada da Circunvalação, a Cervejaria dos Cachorrinhos combina pratos bem servidos, cerveja fresca e um ambiente descontraído. Conta com 4.3/5 no Google Maps.</p>
-                <a href="#contact" class="btn btn-common">Falar connosco</a>
+                <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">Uma cervejaria para comer bem e ficar à vontade</h2>
+                <p class="mb-4">Na Estrada da Circunvalação, a Cervejaria dos Cachorrinhos junta clássicos portuenses, pratos bem servidos e cerveja fresca num ambiente informal. Descubra os cachorrinhos crocantes, as francesinhas, os pregos e os petiscos para partilhar.</p>
+                <a href="#contact" class="btn btn-common">Reservar mesa</a>
               </div>
             </div>
           </div>
@@ -1542,22 +1640,22 @@
               <div class="feature-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                 <div class="icon"><i class="lni-star"></i></div>
                 <div class="feature-content">
-                  <h3>Sabores e ambiente</h3>
-                  <p>Um espaço pensado para destacar a cozinha, o ambiente e a experiência à mesa em Cervejaria dos Cachorrinhos.</p>
+                  <h3>Clássicos do Porto</h3>
+                  <p>Cachorrinhos, francesinhas e pregos preparados para uma refeição descontraída.</p>
                 </div>
               </div>
               <div class="feature-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
                 <div class="icon"><i class="lni-heart"></i></div>
                 <div class="feature-content">
-                  <h3>Horário e localização</h3>
-                  <p>Morada, horário e contactos visíveis para facilitar reservas e visitas.</p>
+                  <h3>Cerveja fresca e petiscos</h3>
+                  <p>Opções para partilhar à mesa, acompanhar o jogo ou prolongar a conversa.</p>
                 </div>
               </div>
               <div class="feature-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
                 <div class="icon"><i class="lni-check-box"></i></div>
                 <div class="feature-content">
                   <h3>Reserva simples</h3>
-                  <p>Tudo preparado para perceber rapidamente quando ir e como contactar.</p>
+                  <p>Envie o pedido por WhatsApp e aguarde a confirmação do restaurante.</p>
                 </div>
               </div>
             </div>
@@ -1565,111 +1663,7 @@
         </div>
       </div>
     </section>
-    <section id="process" class="skill-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
-            <img class="img-fluid" src="assets/generated/web-about-1782668872290.jpg" alt="Cervejaria dos Cachorrinhos">
-          </div>
-          <div class="col-lg-6 col-md-12 col-xs-12 info wow fadeInRight" data-wow-delay="0.3s">
-            <div class="site-heading">
-              <h2 class="section-title">A experiência</h2>
-              <p>Escolhe entre pratos, petiscos e cerveja fresca, confirma o horário e planeia a visita à Circunvalação.</p>
-              <p>Consulta os dados atualizados no Google Maps antes da visita.</p>
-            </div>
-            <div class="skills-section">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="blog" class="section-padding bg-gray">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Pratos em destaque</h2>
-          <p>Três boas razões para conhecer a Cervejaria dos Cachorrinhos.</p>
-        </div>
-        <div class="row">
-          
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
-            <div class="blog-item-wrapper no-image wow fadeInUp" data-wow-delay="0.3s">
-              <div class="blog-item-text">
-                <h3>Francesinha</h3>
-                <p>Um clássico da casa, disponível também em meia dose.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
-            <div class="blog-item-wrapper no-image wow fadeInUp" data-wow-delay="0.5s">
-              <div class="blog-item-text">
-                <h3>Cachorrinhos</h3>
-                <p>Uma opção simples e reconhecível para uma refeição descontraída.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
-            <div class="blog-item-wrapper no-image wow fadeInUp" data-wow-delay="0.7s">
-              <div class="blog-item-text">
-                <h3>Batata fina e crocante</h3>
-                <p>Um acompanhamento destacado repetidamente nas avaliações dos clientes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services" class="section-padding bg-gray">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Especialidades da casa</h2>
-          <p>Algumas das escolhas mais elogiadas por quem visita o restaurante.</p>
-        </div>
-        <div class="row">
-          
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon"><i class="lni-briefcase"></i></div>
-              <div class="services-content">
-                <h3><a href="#contact">Francesinhas</a></h3>
-                <p>Servidas em tamanho normal ou meia dose, com molho picante e batata fina.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="0.5s">
-              <div class="icon"><i class="lni-layers"></i></div>
-              <div class="services-content">
-                <h3><a href="#contact">Pregos</a></h3>
-                <p>O prego à Dog está entre os pratos mais elogiados pelos clientes.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="0.7s">
-              <div class="icon"><i class="lni-cog"></i></div>
-              <div class="services-content">
-                <h3><a href="#contact">Petiscos e tapas</a></h3>
-                <p>Ovos rotos, cachorrinhos e outras opções para provar e partilhar.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="highlights" class="video-promo reservation-banner section-padding text-center" style="background-image: url('assets/generated/web-heroSlides-0-1782668870501.jpg'); background-position: center center; background-size: cover;">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 video-promo-content">
-            <h2>Reserva ou visita Cervejaria dos Cachorrinhos</h2>
-            <p>Confirma o horário atualizado no Google Maps e entra em contacto antes da visita.</p>
-            <a href="#contact" class="btn btn-common">Reservar ou contactar</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="testimonial" class="testimonial section-padding" style="background-image: url('assets/generated/web-heroSlides-0-1782668870501.jpg'); background-position: center center; background-size: cover;">
+    <section id="testimonial" class="testimonial section-padding" style="background-image: url('assets/generated/web-heroSlides-2-1782668871334.webp'); background-position: center center; background-size: cover;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center">
@@ -1683,11 +1677,11 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="img-thumb">
-                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVh5dVDxfcmdmMTDuCkguwL8E5ec_UhL8MnbyzycnkDmura2n3f=s128-c0x00000000-cc-rp-mo" alt="Cláudia Novais">
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVh5dVDxfcmdmMTDuCkguwL8E5ec_UhL8MnbyzycnkDmura2n3f=s128-c0x00000000-cc-rp-mo" alt="Cláudia Novais" loading="lazy" decoding="async">
                   </div>
                   <div class="info">
-                    <h2>Cláudia Novais</h2>
-                    <h3>Google Maps · há um ano</h3>
+                    <h3>Cláudia Novais</h3>
+                    <p class="testimonial-role">Google Maps · há um ano</p>
                   </div>
                   <div class="content">
                     <p class="description">Atendimento rápido e atento. Comida muito boa e bem servida.</p>
@@ -1697,11 +1691,11 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="img-thumb">
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocLsm5Vx7e40bROkTvHbRrZr36Z3xekK5IRD4wtPEVD2s1PznQ=s128-c0x00000000-cc-rp-mo-ba5" alt="Pedro Sousa">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocLsm5Vx7e40bROkTvHbRrZr36Z3xekK5IRD4wtPEVD2s1PznQ=s128-c0x00000000-cc-rp-mo-ba5" alt="Pedro Sousa" loading="lazy" decoding="async">
                   </div>
                   <div class="info">
-                    <h2>Pedro Sousa</h2>
-                    <h3>Google Maps · há um ano</h3>
+                    <h3>Pedro Sousa</h3>
+                    <p class="testimonial-role">Google Maps · há um ano</p>
                   </div>
                   <div class="content">
                     <p class="description">Tenho visitado este restaurante várias vezes a hora de almoço, por razões distintas, sendo elas a rapidez, a qualidade….</p>
@@ -1711,11 +1705,11 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="img-thumb">
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocKcBxUgM1ZdPpMGXNpmt9cF6yU2enHRm5Zxpb3ZYZlwubudzg=s128-c0x00000000-cc-rp-mo" alt="Ana Santos">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocKcBxUgM1ZdPpMGXNpmt9cF6yU2enHRm5Zxpb3ZYZlwubudzg=s128-c0x00000000-cc-rp-mo" alt="Ana Santos" loading="lazy" decoding="async">
                   </div>
                   <div class="info">
-                    <h2>Ana Santos</h2>
-                    <h3>Google Maps · há 4 meses</h3>
+                    <h3>Ana Santos</h3>
+                    <p class="testimonial-role">Google Maps · há 4 meses</p>
                   </div>
                   <div class="content">
                     <p class="description">Espetacular. Provamos praticamente tudo do menu, estilo tapas. O prego é divinal, o melhor do Porto!</p>
@@ -1724,6 +1718,41 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Contacto</h2>
+          <p>Encontra-nos na Estrada da Circunvalação, no Porto. Confirma o horário atualizado antes da visita.</p>
+        </div>
+        <div class="restaurant-contact-layout">
+          <div class="restaurant-contact-intro">
+            <span class="section-kicker">Detalhes</span>
+            <h3>Planeia a tua visita</h3>
+            <p>Confirma o horário e entra em contacto diretamente com Cervejaria dos Cachorrinhos.</p>
+            <div class="restaurant-contact-actions"><a class="btn btn-common" href="tel:960000255">Ligar agora</a><a class="btn btn-border" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener">Abrir no mapa</a></div>
+          </div>
+          <div class="restaurant-contact-list"><a class="restaurant-contact-item" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><strong>Localização</strong>Estr. Da Circunvalação 7938C, 4200-162 Porto, Portugal</span></a><a class="restaurant-contact-item" href="tel:960000255"><i class="lni-phone-handset"></i><span><strong>Telefone</strong>960 000 255</span></a><div class="restaurant-contact-item"><i class="lni-alarm-clock"></i><span><strong>Horário</strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</span></div></div>
+        </div>
+        
+        <div class="whatsapp-reservation-card">
+          <div class="whatsapp-reservation-heading">
+            <span class="section-kicker">Reserva</span>
+            <h3>Pedir reserva pelo WhatsApp</h3>
+            <p>Preenche os dados e envia o pedido. A reserva só fica confirmada depois da resposta do restaurante.</p>
+          </div>
+          <form class="whatsapp-reservation-form" data-whatsapp-reservation data-whatsapp-number="351960000255" data-business-name="Cervejaria dos Cachorrinhos" data-message-intro="Olá! Gostaria de pedir uma reserva.">
+            <label><span>Nome</span><input type="text" name="name" autocomplete="name" required maxlength="80"></label>
+            <label><span>Telefone</span><input type="tel" name="phone" autocomplete="tel" required maxlength="24" placeholder="+351 900 000 000"></label>
+            <label><span>Data</span><input type="date" name="date" required></label>
+            <label><span>Hora</span><input type="time" name="time" required></label>
+            <label><span>Número de pessoas</span><input type="number" name="people" required min="1" max="50" inputmode="numeric"></label>
+            <label class="reservation-notes"><span>Observações <small>(opcional)</small></span><textarea name="notes" rows="3" maxlength="300"></textarea></label>
+            <button class="btn btn-common whatsapp-reservation-submit" type="submit"><i class="lni-whatsapp"></i>Enviar pelo WhatsApp</button>
+            <p class="reservation-disclaimer">Este formulário abre o WhatsApp. A reserva só fica confirmada quando o estabelecimento responder.</p>
+          </form>
         </div>
       </div>
     </section>
@@ -1766,42 +1795,9 @@
         <div class="online-presence-grid"><a class="online-presence-card presence-google-maps wow fadeInUp" data-wow-delay="0.20s" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer"><span class="online-presence-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg></span><span><strong>Google Maps</strong><small>Ver localização e avaliações</small></span><i class="lni-arrow-top-right"></i></a></div>
       </div>
     </section>
-    <section id="contact" class="section-padding">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title">Contacto</h2>
-          <p>Encontra-nos na Estrada da Circunvalação, no Porto. Confirma o horário atualizado antes da visita.</p>
-        </div>
-        <div class="restaurant-contact-layout">
-          <div class="restaurant-contact-intro">
-            <span class="section-kicker">Detalhes</span>
-            <h3>Planeia a tua visita</h3>
-            <p>Confirma o horário e entra em contacto diretamente com Cervejaria dos Cachorrinhos.</p>
-            <div class="restaurant-contact-actions"><a class="btn btn-common" href="tel:960000255">Ligar agora</a><a class="btn btn-border" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener">Abrir no mapa</a></div>
-          </div>
-          <div class="restaurant-contact-list"><a class="restaurant-contact-item" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><strong>Localização</strong>Estr. Da Circunvalação 7938C, 4200-162 Porto, Portugal</span></a><a class="restaurant-contact-item" href="tel:960000255"><i class="lni-phone-handset"></i><span><strong>Telefone</strong>960 000 255</span></a><div class="restaurant-contact-item"><i class="lni-alarm-clock"></i><span><strong>Horário</strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</span></div></div>
-        </div>
-        
-        <div class="whatsapp-reservation-card">
-          <div class="whatsapp-reservation-heading">
-            <span class="section-kicker">Reserva</span>
-            <h3>Pedir reserva pelo WhatsApp</h3>
-            <p>Preenche os dados e envia o pedido. A reserva só fica confirmada depois da resposta do restaurante.</p>
-          </div>
-          <form class="whatsapp-reservation-form" data-whatsapp-reservation data-whatsapp-number="351960000255" data-business-name="Cervejaria dos Cachorrinhos" data-message-intro="Olá! Gostaria de pedir uma reserva.">
-            <label><span>Nome</span><input type="text" name="name" autocomplete="name" required maxlength="80"></label>
-            <label><span>Telefone</span><input type="tel" name="phone" autocomplete="tel" required maxlength="24" placeholder="+351 900 000 000"></label>
-            <label><span>Data</span><input type="date" name="date" required></label>
-            <label><span>Hora</span><input type="time" name="time" required></label>
-            <label><span>Número de pessoas</span><input type="number" name="people" required min="1" max="50" inputmode="numeric"></label>
-            <label class="reservation-notes"><span>Observações <small>(opcional)</small></span><textarea name="notes" rows="3" maxlength="300"></textarea></label>
-            <button class="btn btn-common whatsapp-reservation-submit" type="submit"><i class="lni-whatsapp"></i>Enviar pelo WhatsApp</button>
-            <p class="reservation-disclaimer">Este formulário abre o WhatsApp. A reserva só fica confirmada quando o estabelecimento responder.</p>
-          </form>
-        </div>
-      </div>
-    </section>
     </main>
+
+    <nav class="mobile-action-bar" aria-label="Ações rápidas"><a href="tel:960000255"><i class="lni-phone-handset"></i><span>Ligar</span></a><a href="https://wa.me/351960000255" target="_blank" rel="noopener"><i class="lni-whatsapp"></i><span>WhatsApp</span></a><a href="menu/index.html"><i class="lni-dinner"></i><span>Menu</span></a><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span>Direções</span></a></nav>
 
     <div class="copyright">
       <div class="container">

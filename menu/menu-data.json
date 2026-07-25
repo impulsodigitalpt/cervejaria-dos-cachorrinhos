@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22T12:22:55+00:00",
+  "updatedAt": "2026-07-25T10:31:58+00:00",
   "business": {
     "name": "Cervejaria Dos Cachorrinhos",
     "logo": ""
@@ -12,7 +12,7 @@
     "subtitle": "Descobre a nossa carta.",
     "currency": "EUR",
     "locale": "pt-PT",
-    "note": "Preços com IVA incluído à taxa legal em vigor.",
+    "note": "Preços indicativos com IVA incluído e sujeitos a confirmação no restaurante.",
     "showUnavailable": true
   },
   "theme": {
@@ -23,32 +23,204 @@
   },
   "categories": [
     {
-      "id": "entradas",
-      "name": "Entradas",
+      "id": "cachorrinhos",
+      "name": "Cachorrinhos",
       "description": "",
       "enabled": true,
-      "items": []
+      "items": [
+        {
+          "id": "cachorrinho-simples",
+          "name": "Cachorrinho Simples",
+          "description": "Salsicha e queijo derretido em pão crocante, cortado em pedaços.",
+          "priceCents": 660,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "cachorrinho-especial",
+          "name": "Cachorrinho Especial",
+          "description": "Cachorrinho com salsicha fina, queijo derretido e molho especial.",
+          "priceCents": 1000,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        }
+      ]
     },
     {
-      "id": "pratos-principais",
-      "name": "Pratos principais",
+      "id": "snacks",
+      "name": "Snacks e petiscos",
       "description": "",
       "enabled": true,
-      "items": []
+      "items": [
+        {
+          "id": "francesinha",
+          "name": "Francesinha",
+          "description": "Sanduíche tradicional do Porto com molho da casa.",
+          "priceCents": 1360,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "francesinha-ovo",
+          "name": "Francesinha com Ovo",
+          "description": "Francesinha tradicional finalizada com ovo.",
+          "priceCents": 1430,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "prego-pao",
+          "name": "Prego em Pão",
+          "description": "Carne tenra servida em pão.",
+          "priceCents": 790,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "prego-cachorrinhos",
+          "name": "Prego à Cachorrinhos",
+          "description": "Carne em pão, à moda da casa.",
+          "priceCents": 1000,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "prego-misto",
+          "name": "Prego em Pão Misto",
+          "description": "Prego em pão com fiambre e queijo.",
+          "priceCents": 790,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "prego-especial",
+          "name": "Prego em Pão Especial",
+          "description": "Prego em pão com molho especial.",
+          "priceCents": 1000,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "ovos-rotos",
+          "name": "Ovos Rotos",
+          "description": "Ovos sobre batata com fiambre, preparados para misturar à mesa.",
+          "priceCents": 1430,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "batata-frita",
+          "name": "Batata Frita",
+          "description": "Batata fina, dourada e temperada com sal.",
+          "priceCents": 330,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        }
+      ]
     },
     {
-      "id": "sobremesas",
-      "name": "Sobremesas",
+      "id": "pratos",
+      "name": "Pratos",
       "description": "",
       "enabled": true,
-      "items": []
+      "items": [
+        {
+          "id": "prego-prato",
+          "name": "Prego no Prato",
+          "description": "Prego servido no prato com acompanhamento.",
+          "priceCents": 1400,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        }
+      ]
     },
     {
       "id": "bebidas",
       "name": "Bebidas",
       "description": "",
       "enabled": true,
-      "items": []
+      "items": [
+        {
+          "id": "coca-cola-zero",
+          "name": "Coca-Cola Zero",
+          "description": "",
+          "priceCents": 290,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "fanta-laranja",
+          "name": "Fanta Laranja",
+          "description": "",
+          "priceCents": 290,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "7up",
+          "name": "7Up",
+          "description": "",
+          "priceCents": 290,
+          "image": "",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        }
+      ]
     }
   ]
 }
