@@ -6,12 +6,6 @@
     : {};
   const state = { data: null, query: "" };
   const refs = {
-    businessName: document.querySelector("#business-name"),
-    businessLogo: document.querySelector("#business-logo"),
-    brandMark: document.querySelector("#brand-mark"),
-    title: document.querySelector("#menu-title"),
-    subtitle: document.querySelector("#menu-subtitle"),
-    updated: document.querySelector("#menu-updated"),
     nav: document.querySelector("#category-nav"),
     search: document.querySelector("#menu-search"),
     clearSearch: document.querySelector("#clear-search"),
@@ -93,13 +87,6 @@
     } catch (_) {
       return `${(value / 100).toFixed(2).replace(".", ",")} ${state.data.settings.currency}`;
     }
-  }
-
-  function formattedDate(value) {
-    if (!value) return "Atualizado recentemente";
-    const date = new Date(value);
-    if (Number.isNaN(date.getTime())) return "Atualizado recentemente";
-    return `Atualizado em ${new Intl.DateTimeFormat("pt-PT", { day: "2-digit", month: "long", year: "numeric" }).format(date)}`;
   }
 
   function itemMatches(item, query) {
@@ -214,18 +201,8 @@
     document.body.classList.add(`theme-${data.settings.template}`);
     document.body.classList.remove("is-loading");
     document.title = `${data.settings.title} | ${data.business.name}`;
-    refs.businessName.textContent = data.business.name;
-    refs.footerName.textContent = data.business.name;
-    refs.title.textContent = data.settings.title;
-    refs.subtitle.textContent = data.settings.subtitle;
-    refs.updated.textContent = formattedDate(data.updatedAt);
-    refs.footerNote.textContent = data.settings.note;
-    if (data.business.logo) {
-      refs.businessLogo.src = data.business.logo;
-      refs.businessLogo.alt = `Logótipo de ${data.business.name}`;
-      refs.businessLogo.hidden = false;
-      refs.brandMark.hidden = true;
-    }
+    if (refs.footerName) refs.footerName.textContent = data.business.name;
+    if (refs.footerNote) refs.footerNote.textContent = data.settings.note;
   }
 
   function updateActiveCategory() {
