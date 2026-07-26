@@ -41,11 +41,11 @@
           "tags": []
         },
         {
-          "id": "cachorrinho-especial",
-          "name": "Cachorrinho Especial",
-          "description": "Cachorrinho com salsicha fina, queijo derretido e molho especial.",
+          "id": "cachorro-especial",
+          "name": "Cachorro Especial",
+          "description": "Cachorro com salsicha fina e queijo, coberto com molho de francesinha e acompanhado de batata frita.",
           "priceCents": 1000,
-          "image": "../assets/generated/web-heroSlides-2-1782668871334.webp",
+          "image": "../assets/menu/cachorro-especial-v2.webp",
           "enabled": true,
           "available": true,
           "featured": false,
@@ -60,30 +60,6 @@
       "description": "",
       "enabled": true,
       "items": [
-        {
-          "id": "francesinha",
-          "name": "Francesinha",
-          "description": "Sanduíche tradicional do Porto com molho da casa.",
-          "priceCents": 1360,
-          "image": "../assets/generated/web-heroSlides-1-1782668870857.webp",
-          "enabled": true,
-          "available": true,
-          "featured": false,
-          "allergens": [],
-          "tags": []
-        },
-        {
-          "id": "francesinha-ovo",
-          "name": "Francesinha com Ovo",
-          "description": "Francesinha tradicional finalizada com ovo.",
-          "priceCents": 1430,
-          "image": "../assets/generated/web-heroSlides-1-1782668870857.webp",
-          "enabled": true,
-          "available": true,
-          "featured": false,
-          "allergens": [],
-          "tags": []
-        },
         {
           "id": "prego-pao",
           "name": "Prego em Pão",
@@ -133,18 +109,6 @@
           "tags": []
         },
         {
-          "id": "ovos-rotos",
-          "name": "Ovos Rotos",
-          "description": "Ovos sobre batata com fiambre, preparados para misturar à mesa.",
-          "priceCents": 1430,
-          "image": "../assets/menu/ovos-rotos.webp",
-          "enabled": true,
-          "available": true,
-          "featured": false,
-          "allergens": [],
-          "tags": []
-        },
-        {
           "id": "batata-frita",
           "name": "Batata Frita",
           "description": "Batata fina, dourada e temperada com sal.",
@@ -164,6 +128,42 @@
       "description": "",
       "enabled": true,
       "items": [
+        {
+          "id": "francesinha",
+          "name": "Francesinha",
+          "description": "Sanduíche tradicional do Porto com molho da casa.",
+          "priceCents": 1360,
+          "image": "../assets/generated/web-heroSlides-1-1782668870857.webp",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "francesinha-ovo",
+          "name": "Francesinha com Ovo",
+          "description": "Francesinha tradicional finalizada com ovo.",
+          "priceCents": 1430,
+          "image": "../assets/generated/web-heroSlides-1-1782668870857.webp",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
+        {
+          "id": "ovos-rotos",
+          "name": "Ovos Rotos",
+          "description": "Ovos sobre batata com fiambre, preparados para misturar à mesa.",
+          "priceCents": 1430,
+          "image": "../assets/menu/ovos-rotos.webp",
+          "enabled": true,
+          "available": true,
+          "featured": false,
+          "allergens": [],
+          "tags": []
+        },
         {
           "id": "prego-prato",
           "name": "Prego no Prato",
