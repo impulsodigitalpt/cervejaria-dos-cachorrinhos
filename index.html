@@ -16,6 +16,10 @@
     <title>Cervejaria dos Cachorrinhos | Petiscos no Porto</title>
     <link rel="canonical" href="https://cervejariadoscachorrinhos.pt/">
 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/line-icons.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -884,7 +888,7 @@
       body[data-template="restaurant-immersive"] #hero-area .hero-stage,
       body[data-template="restaurant-immersive"] #hero-area .img-thumb img {
         height: 100vh;
-        min-height: 720px;
+        min-height: 700px;
       }
       body[data-template="restaurant-immersive"] #hero-area .img-thumb img {
         filter: saturate(0.72) contrast(1.12);
@@ -896,19 +900,21 @@
         bottom: auto;
         left: 50%;
         max-width: 1040px;
-        padding: 120px 28px 40px;
+        padding: 104px 28px 40px;
         text-align: center;
         top: 50%;
         transform: translate(-50%, -50%);
       }
       body[data-template="restaurant-immersive"] #hero-area .contents .head-title {
-        font-size: clamp(64px, 9vw, 126px);
+        font-size: clamp(58px, 7vw, 96px);
         font-weight: 300;
-        letter-spacing: -0.055em;
-        line-height: 0.86;
+        letter-spacing: -0.045em;
+        line-height: 0.9;
         margin: 18px auto 24px;
         max-width: 980px;
+        overflow-wrap: normal;
         text-transform: uppercase;
+        word-break: normal;
       }
       body[data-template="restaurant-immersive"] #hero-area .contents .hero-subtitle {
         font-size: 15px;
@@ -940,7 +946,7 @@
       body[data-template="restaurant-immersive"] .restaurant-quick-info .container > div {
         justify-content: center;
       }
-      body[data-template="restaurant-immersive"] .section-padding { padding: 126px 0; }
+      body[data-template="restaurant-immersive"] .section-padding { padding: 92px 0; }
       body[data-template="restaurant-immersive"] #about,
       body[data-template="restaurant-immersive"] #services,
       body[data-template="restaurant-immersive"] #blog,
@@ -952,13 +958,14 @@
       body[data-template="restaurant-immersive"] #about .text-wrapper {
         background: #08090a;
         color: #fff;
-        padding: 10vw;
+        padding: 7vw;
       }
       body[data-template="restaurant-immersive"] #about .title-hl {
         color: #fff;
-        font-size: clamp(42px, 6vw, 78px);
+        font-size: clamp(40px, 4.6vw, 60px);
         font-weight: 300;
-        line-height: 1;
+        letter-spacing: -0.035em;
+        line-height: 1.04;
       }
       body[data-template="restaurant-immersive"] #about .text-wrapper p { color: rgba(255, 255, 255, 0.66); }
       body[data-template="restaurant-immersive"] #about .feature-bg {
@@ -971,9 +978,10 @@
       body[data-template="restaurant-immersive"] .restaurant-contact-intro h3,
       body[data-template="restaurant-immersive"] .restaurant-contact-item strong { color: #fff; }
       body[data-template="restaurant-immersive"] .section-header .section-title {
-        font-size: clamp(44px, 6vw, 76px);
+        font-size: clamp(40px, 5vw, 62px);
         font-weight: 300;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.035em;
+        line-height: 1.04;
         text-transform: uppercase;
       }
       body[data-template="restaurant-immersive"] .section-header p,
@@ -981,6 +989,13 @@
       body[data-template="restaurant-immersive"] #services p,
       body[data-template="restaurant-immersive"] #blog p,
       body[data-template="restaurant-immersive"] .restaurant-contact-intro p { color: rgba(255, 255, 255, 0.62); }
+      body[data-template="restaurant-immersive"] .section-header p,
+      body[data-template="restaurant-immersive"] #about .text-wrapper p,
+      body[data-template="restaurant-immersive"] #blog .blog-item-text p,
+      body[data-template="restaurant-immersive"] .restaurant-contact-intro p {
+        font-size: 16px;
+        line-height: 1.7;
+      }
       body[data-template="restaurant-immersive"] #services .services-item {
         background: #101214;
         border: 1px solid rgba(255, 255, 255, 0.12);
@@ -995,12 +1010,19 @@
         border-radius: 0;
         box-shadow: none;
       }
-      body[data-template="restaurant-immersive"] #blog .blog-item-img { aspect-ratio: 3 / 4; }
+      body[data-template="restaurant-immersive"] #blog .blog-item-img { aspect-ratio: 4 / 3; }
       body[data-template="restaurant-immersive"] #blog .blog-item-img img { filter: saturate(0.66) contrast(1.08); }
+      body[data-template="restaurant-immersive"] #blog .blog-item-text h3 {
+        font-size: 22px;
+        line-height: 1.2;
+      }
       body[data-template="restaurant-immersive"] #process img { border-radius: 0; filter: saturate(0.65) contrast(1.12); }
       body[data-template="restaurant-immersive"] .progress { background: rgba(255, 255, 255, 0.12); }
       body[data-template="restaurant-immersive"] #counter.restaurant-stats { background: var(--site-primary); }
       body[data-template="restaurant-immersive"] #contact { border-top: 1px solid rgba(255, 255, 255, 0.13); }
+      body[data-template="restaurant-immersive"] .restaurant-contact-layout { gap: 36px; }
+      body[data-template="restaurant-immersive"] .whatsapp-reservation-card { color: #2b160b; }
+      body[data-template="restaurant-immersive"] .whatsapp-reservation-heading p { color: #657068; }
       body[data-template="restaurant-immersive"] .restaurant-contact-item {
         border-color: rgba(255, 255, 255, 0.14);
         color: #e8e4dc;
@@ -1462,8 +1484,8 @@
         body[data-template="restaurant-editorial"] #hero-area .contents .head-title { font-size: 43px; }
         body[data-template="restaurant-immersive"] #hero-area .hero-stage,
         body[data-template="restaurant-immersive"] #hero-area .img-thumb img {
-          height: 680px;
-          min-height: 680px;
+          height: 620px;
+          min-height: 620px;
         }
         body[data-template="restaurant-immersive"] #hero-area .contents {
           left: 0;
@@ -1472,10 +1494,36 @@
           transform: translateY(-50%);
           width: 100%;
         }
-        body[data-template="restaurant-immersive"] #hero-area .contents .head-title { font-size: 54px; }
+        body[data-template="restaurant-immersive"] #hero-area .contents .head-title {
+          font-size: 42px;
+          letter-spacing: -0.035em;
+          line-height: 0.96;
+        }
+        body[data-template="restaurant-immersive"] #hero-area .contents .hero-subtitle {
+          font-size: 14px;
+          line-height: 1.55;
+        }
+        body[data-template="restaurant-immersive"] .hero-kicker,
+        body[data-template="restaurant-immersive"] .section-kicker { letter-spacing: 0.24em; }
         body[data-template="restaurant-immersive"] #hero-area .header-button { flex-wrap: wrap; }
-        body[data-template="restaurant-immersive"] .section-padding { padding: 82px 0; }
-        body[data-template="restaurant-immersive"] #about .text-wrapper { padding: 72px 28px; }
+        body[data-template="restaurant-immersive"] .section-padding { padding: 60px 0; }
+        body[data-template="restaurant-immersive"] .section-header { margin-bottom: 32px; }
+        body[data-template="restaurant-immersive"] .section-header .section-title {
+          font-size: 36px;
+          letter-spacing: -0.03em;
+          line-height: 1.06;
+        }
+        body[data-template="restaurant-immersive"] #about .text-wrapper { padding: 56px 22px; }
+        body[data-template="restaurant-immersive"] #about .title-hl {
+          font-size: 36px;
+          line-height: 1.06;
+        }
+        body[data-template="restaurant-immersive"] #blog .blog-item-text { padding: 20px; }
+        body[data-template="restaurant-immersive"] #blog .blog-item-text h3 { font-size: 20px; }
+        body[data-template="restaurant-immersive"] .whatsapp-reservation-card {
+          margin-top: 32px;
+          padding: 24px 18px;
+        }
         body[data-template="restaurant-menu-first"] .navbar { margin: 0; border-radius: 0; }
         body[data-template="restaurant-menu-first"] #hero-area.hero-area-bg { padding: 62px 12px 18px; }
         body[data-template="restaurant-menu-first"] #hero-area .hero-stage { min-height: 680px; }
@@ -1549,7 +1597,7 @@
               <li class="nav-item"><a class="nav-link page-scroll" href="#about">Sobre nós</a></li>
               <li class="nav-item"><a class="nav-link page-scroll" href="#testimonial">Opiniões</a></li>
               <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contacto</a></li>
-              <li class="nav-item nav-item-digital-menu"><a class="nav-link" href="menu/index.html">Menu digital</a></li>
+              <li class="nav-item nav-item-digital-menu"><a class="nav-link" href="menu/">Menu digital</a></li>
             </ul>
           </div>
         </div>
@@ -1574,7 +1622,7 @@
                   <p class="hero-subtitle">Sabores generosos, cerveja fresca e um ambiente descontraído na Estrada da Circunvalação.</p>
                   <div class="header-button">
                     <a href="#contact" class="btn btn-common">Reservar pelo WhatsApp</a>
-                    <a href="menu/index.html" class="btn btn-border">Ver menu</a>
+                    <a href="menu/" class="btn btn-border">Ver menu</a>
                   </div>
                 </div>
               </div>
@@ -1806,7 +1854,7 @@
     </section>
     </main>
 
-    <nav class="mobile-action-bar" aria-label="Ações rápidas"><a href="tel:960000255"><i class="lni-phone-handset"></i><span>Ligar</span></a><a href="https://wa.me/351960000255" target="_blank" rel="noopener"><i class="lni-whatsapp"></i><span>WhatsApp</span></a><a href="menu/index.html"><i class="lni-dinner"></i><span>Menu</span></a><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span>Direções</span></a></nav>
+    <nav class="mobile-action-bar" aria-label="Ações rápidas"><a href="tel:960000255"><i class="lni-phone-handset"></i><span>Ligar</span></a><a href="https://wa.me/351960000255" target="_blank" rel="noopener"><i class="lni-whatsapp"></i><span>WhatsApp</span></a><a href="menu/"><i class="lni-dinner"></i><span>Menu</span></a><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span>Direções</span></a></nav>
 
     <div class="copyright">
       <div class="container">

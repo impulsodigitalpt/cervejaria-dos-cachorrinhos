@@ -49,6 +49,7 @@
         title: safeText(settings.title, "A nossa carta"),
         subtitle: safeText(settings.subtitle, "Descobre o que preparámos para ti."),
         currency: /^[A-Z]{3}$/.test(settings.currency || "") ? settings.currency : "EUR",
+        appearance: settings.appearance === "dark" ? "dark" : "light",
         locale: safeText(settings.locale, "pt-PT"),
         note: safeText(settings.note, "Preços com IVA incluído à taxa legal em vigor."),
         showUnavailable: settings.showUnavailable !== false,
@@ -198,8 +199,12 @@
   function applyIdentity() {
     const data = state.data;
     document.body.classList.remove("theme-menu-classic", "theme-menu-editorial", "theme-menu-pop");
+    document.body.classList.remove("menu-light", "menu-dark");
     document.body.classList.add(`theme-${data.settings.template}`);
+    document.body.classList.add(`menu-${data.settings.appearance}`);
     document.body.classList.remove("is-loading");
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor && data.settings.appearance === "dark") themeColor.content = data.theme?.dark || "#120d0a";
     document.title = `${data.settings.title} | ${data.business.name}`;
     if (refs.footerName) refs.footerName.textContent = data.business.name;
     if (refs.footerNote) refs.footerNote.textContent = data.settings.note;
