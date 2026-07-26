@@ -131,7 +131,7 @@
     if (item.image) {
       const image = el("img", "item-image");
       image.src = item.image;
-      image.alt = "";
+      image.alt = item.name;
       image.loading = "lazy";
       image.decoding = "async";
       image.addEventListener("error", () => {
