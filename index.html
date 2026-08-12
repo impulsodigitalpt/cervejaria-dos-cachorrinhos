@@ -16,6 +16,7 @@
     <title>Cervejaria dos Cachorrinhos | Petiscos no Porto</title>
     <link rel="canonical" href="https://cervejariadoscachorrinhos.pt/">
 
+
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -29,7 +30,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Cervejaria dos Cachorrinhos", "description": "Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.", "telephone": "960 000 255", "address": {"@type": "PostalAddress", "streetAddress": "Estrada da Circunvalação 7938C", "postalCode": "4200-162", "addressLocality": "Porto", "addressCountry": "PT"}, "url": "https://cervejariadoscachorrinhos.pt/", "image": "https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png", "priceRange": "€€", "servesCuisine": ["Portuguesa", "Petiscos", "Francesinhas"], "openingHours": ["Tu-Sa 12:00-00:00", "Su 16:00-00:00"], "hasMenu": "https://cervejariadoscachorrinhos.pt/menu/"}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "@id": "https://cervejariadoscachorrinhos.pt/#restaurant", "name": "Cervejaria dos Cachorrinhos", "description": "Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.", "telephone": "960 000 255", "address": {"@type": "PostalAddress", "streetAddress": "Estrada da Circunvalação 7938C", "postalCode": "4200-162", "addressLocality": "Porto", "addressCountry": "PT"}, "url": "https://cervejariadoscachorrinhos.pt/", "image": "https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png", "priceRange": "€€", "servesCuisine": ["Portuguesa", "Petiscos", "Francesinhas"], "openingHours": ["Tu-Sa 12:00-00:00", "Su 16:00-00:00"], "hasMap": "https://maps.google.com/?cid=9674207424615124378&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA", "hasMenu": "https://cervejariadoscachorrinhos.pt/menu/"}</script>
     <style>
       :root {
         --site-primary: #b91c1c;
@@ -37,7 +38,7 @@
         --site-accent: #facc15;
         --site-dark: #2b160b;
       }
-      body { background: #fffaf5; }
+      body { background: #fff; }
       .hero-slide-fallback {
         background: linear-gradient(135deg, var(--site-dark), var(--site-primary) 58%, var(--site-secondary));
         height: 100%;
@@ -63,9 +64,10 @@
       }
       .mobile-action-bar { display: none; }
       .navbar {
-        background: rgba(43, 22, 11, 0.78) !important;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 10px 30px rgba(43, 22, 11, 0.18);
+        background: rgba(15, 23, 42, 0.88) !important;
+        background: color-mix(in srgb, var(--site-dark) 88%, transparent) !important;
+        backdrop-filter: blur(16px) saturate(140%);
+        box-shadow: 0 12px 34px rgba(15, 23, 42, 0.14);
       }
       .navbar .container {
         align-items: center;
@@ -108,6 +110,11 @@
         align-items: center;
         display: inline-flex;
         gap: 10px;
+      }
+      .navbar-brand .brand-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
       .brand-mark {
         align-items: center;
@@ -195,8 +202,13 @@
       .controls .active,
       .services-item:hover .icon i,
       .back-to-top i {
-        background: linear-gradient(135deg, var(--site-secondary), var(--site-primary));
+        background-color: var(--site-secondary);
+        background-image: linear-gradient(135deg, var(--site-secondary), var(--site-primary));
         border-color: var(--site-secondary);
+      }
+      .btn-border {
+        border-color: var(--site-secondary);
+        color: var(--site-secondary);
       }
       .btn-border:hover,
       .navbar-expand-md .navbar-nav .nav-link:focus,
@@ -208,11 +220,9 @@
       .section-header .section-title::after {
         background: var(--site-secondary);
       }
-      #about {
-        background: #fffaf5;
-      }
+      #about { background: #fff; }
       #about .text-wrapper {
-        background: #fffaf5;
+        background: #fff;
         color: var(--site-dark);
       }
       #about .title-hl {
@@ -773,6 +783,51 @@
         justify-content: space-between;
       }
       .restaurant-footer p { margin: 0; }
+      .btn {
+        border-radius: 999px;
+        letter-spacing: 0.02em;
+        transition: transform .22s ease, box-shadow .22s ease, background-color .22s ease, border-color .22s ease;
+      }
+      .btn:hover,
+      .btn:focus-visible {
+        box-shadow: 0 14px 30px color-mix(in srgb, var(--site-primary) 24%, transparent);
+        transform: translateY(-2px);
+      }
+      .services-item,
+      .blog-item-wrapper,
+      .testimonial-item,
+      .online-presence-card {
+        border: 1px solid color-mix(in srgb, var(--site-primary) 12%, #e8edf3);
+        border-radius: 20px;
+        box-shadow: 0 18px 45px rgba(15, 23, 42, .06);
+        transition: border-color .28s ease, box-shadow .28s ease, transform .28s cubic-bezier(.2,.8,.2,1);
+      }
+      .services-item:hover,
+      .blog-item-wrapper:hover,
+      .online-presence-card:hover {
+        border-color: color-mix(in srgb, var(--site-primary) 34%, #dce3ea);
+        box-shadow: 0 24px 58px rgba(15, 23, 42, .11);
+        transform: translateY(-6px);
+      }
+      .section-padding { background-color: #fff; }
+      #services,
+      #process,
+      .online-presence-section {
+        background: linear-gradient(180deg, #fff 0%, color-mix(in srgb, var(--site-primary) 4%, #f8fafc) 100%);
+      }
+      #hero-area .contents .head-title {
+        animation: modernHeroIn .72s cubic-bezier(.2,.8,.2,1) both;
+        text-wrap: balance;
+      }
+      #hero-area .hero-subtitle { animation: modernHeroIn .72s cubic-bezier(.2,.8,.2,1) .12s both; }
+      #hero-area .header-button { animation: modernHeroIn .72s cubic-bezier(.2,.8,.2,1) .22s both; }
+      @keyframes modernHeroIn {
+        from { opacity: 0; transform: translateY(24px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+      }
       body.theme-neutral .brand-mark,
       body.theme-neutral .btn-common,
       body.theme-neutral .controls .active,
@@ -1047,19 +1102,19 @@
       body[data-template="restaurant-immersive"] .copyright { background: #030404; }
 
       body[data-template="restaurant-menu-first"] {
-        background: #fff4cf;
-        color: #173b30;
+        background: #fff;
+        color: var(--site-dark);
         font-family: Arial, Helvetica, sans-serif;
       }
       body[data-template="restaurant-menu-first"] .navbar {
-        background: #173b30 !important;
+        background: var(--site-dark) !important;
         border-radius: 0 0 22px 22px;
         box-shadow: none;
         margin: 0 16px;
       }
-      body[data-template="restaurant-menu-first"] .top-nav-collapse { background: #173b30 !important; }
+      body[data-template="restaurant-menu-first"] .top-nav-collapse { background: var(--site-dark) !important; }
       body[data-template="restaurant-menu-first"] #hero-area.hero-area-bg {
-        background: #ffdf4f !important;
+        background: #fff !important;
         padding: 92px 18px 26px;
       }
       body[data-template="restaurant-menu-first"] #hero-area .hero-stage {
@@ -1080,7 +1135,7 @@
       body[data-template="restaurant-menu-first"] #hero-area .hero-stage::after { content: none; }
       body[data-template="restaurant-menu-first"] #hero-area .contents {
         bottom: auto;
-        color: #173b30;
+        color: var(--site-dark);
         left: max(40px, calc((100% - 1400px) / 2));
         max-width: 600px;
         padding: 98px 38px 40px 0;
@@ -1089,7 +1144,7 @@
         width: 48%;
       }
       body[data-template="restaurant-menu-first"] #hero-area .contents .head-title {
-        color: #173b30;
+        color: var(--site-dark);
         font-size: clamp(58px, 7vw, 96px);
         font-weight: 900;
         letter-spacing: -0.065em;
@@ -1097,7 +1152,7 @@
         text-transform: uppercase;
       }
       body[data-template="restaurant-menu-first"] #hero-area .contents .hero-subtitle {
-        color: #173b30;
+        color: var(--site-dark);
         font-size: 17px;
         font-weight: 700;
       }
@@ -1112,69 +1167,70 @@
         text-transform: uppercase;
       }
       body[data-template="restaurant-menu-first"] #hero-area .btn-border {
-        border-color: #173b30;
-        color: #173b30;
+        border-color: var(--site-dark);
+        color: var(--site-dark);
       }
       body[data-template="restaurant-menu-first"] .restaurant-quick-info {
-        background: #f0642f;
-        color: #173b30;
+        background: #fff;
+        border-bottom: 1px solid color-mix(in srgb, var(--site-primary) 14%, #e2e8f0);
+        color: var(--site-dark);
       }
       body[data-template="restaurant-menu-first"] .restaurant-quick-info a,
-      body[data-template="restaurant-menu-first"] .restaurant-quick-info .container > div { color: #173b30; border-color: rgba(23, 59, 48, 0.24); }
+      body[data-template="restaurant-menu-first"] .restaurant-quick-info .container > div { color: var(--site-dark); border-color: color-mix(in srgb, var(--site-primary) 18%, #e2e8f0); }
       body[data-template="restaurant-menu-first"] .restaurant-quick-info i,
-      body[data-template="restaurant-menu-first"] .restaurant-quick-info small { color: #173b30; }
+      body[data-template="restaurant-menu-first"] .restaurant-quick-info small { color: var(--site-primary); }
       body[data-template="restaurant-menu-first"] .section-padding { padding: 94px 0; }
       body[data-template="restaurant-menu-first"] .section-header .section-title {
-        color: #173b30;
+        color: var(--site-dark);
         font-size: clamp(46px, 6vw, 72px);
         font-weight: 900;
         letter-spacing: -0.055em;
         line-height: 0.95;
         text-transform: uppercase;
       }
-      body[data-template="restaurant-menu-first"] #blog { background: #fff4cf !important; }
+      body[data-template="restaurant-menu-first"] #blog { background: #fff !important; }
       body[data-template="restaurant-menu-first"] #blog .blog-item-wrapper {
         background: #fff;
-        border: 3px solid #173b30;
+        border: 1px solid color-mix(in srgb, var(--site-primary) 16%, #e2e8f0);
         border-radius: 26px;
-        box-shadow: 8px 8px 0 #173b30;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, .09);
       }
       body[data-template="restaurant-menu-first"] #blog .blog-item-img { aspect-ratio: 1 / 1; }
       body[data-template="restaurant-menu-first"] #blog .blog-item-text { padding: 24px; }
-      body[data-template="restaurant-menu-first"] #blog .blog-item-text h3 { color: #173b30; font-size: 25px; font-weight: 900; }
-      body[data-template="restaurant-menu-first"] #services { background: #173b30 !important; }
+      body[data-template="restaurant-menu-first"] #blog .blog-item-text h3 { color: var(--site-dark); font-size: 25px; font-weight: 900; }
+      body[data-template="restaurant-menu-first"] #services { background: color-mix(in srgb, var(--site-primary) 7%, #f8fafc) !important; }
       body[data-template="restaurant-menu-first"] #services .section-title,
-      body[data-template="restaurant-menu-first"] #services .section-header p { color: #fff4cf; }
+      body[data-template="restaurant-menu-first"] #services .section-header p { color: var(--site-dark); }
       body[data-template="restaurant-menu-first"] #services .services-item {
-        background: #ffdf4f;
-        border: 0;
+        background: #fff;
+        border: 1px solid color-mix(in srgb, var(--site-primary) 14%, #e2e8f0);
         border-radius: 24px;
         min-height: 190px;
         padding: 30px;
       }
-      body[data-template="restaurant-menu-first"] #services .col-md-6:nth-child(3n + 2) .services-item { background: #f0642f; }
-      body[data-template="restaurant-menu-first"] #services .col-md-6:nth-child(3n) .services-item { background: #d8eaa7; }
+      body[data-template="restaurant-menu-first"] #services .col-md-6:nth-child(3n + 2) .services-item { background: color-mix(in srgb, var(--site-secondary) 7%, #fff); }
+      body[data-template="restaurant-menu-first"] #services .col-md-6:nth-child(3n) .services-item { background: color-mix(in srgb, var(--site-accent) 32%, #fff); }
       body[data-template="restaurant-menu-first"] #services .services-content h3 a,
       body[data-template="restaurant-menu-first"] #services .services-content p,
-      body[data-template="restaurant-menu-first"] #services .icon i { color: #173b30; }
+      body[data-template="restaurant-menu-first"] #services .icon i { color: var(--site-dark); }
       body[data-template="restaurant-menu-first"] .reservation-banner {
-        border: 18px solid #fff4cf;
+        border: 18px solid #fff;
         border-radius: 46px;
         overflow: hidden;
       }
-      body[data-template="restaurant-menu-first"] #about .text-wrapper { background: #f0642f; }
+      body[data-template="restaurant-menu-first"] #about .text-wrapper { background: #fff; }
       body[data-template="restaurant-menu-first"] #about .title-hl,
-      body[data-template="restaurant-menu-first"] #about .text-wrapper p { color: #173b30; }
-      body[data-template="restaurant-menu-first"] #about .feature-bg { background: #ffdf4f; }
+      body[data-template="restaurant-menu-first"] #about .text-wrapper p { color: var(--site-dark); }
+      body[data-template="restaurant-menu-first"] #about .feature-bg { background: color-mix(in srgb, var(--site-primary) 9%, #fff); }
       body[data-template="restaurant-menu-first"] #about .feature-content,
       body[data-template="restaurant-menu-first"] #about .feature-content h3,
-      body[data-template="restaurant-menu-first"] #about .feature-content p { color: #173b30; }
-      body[data-template="restaurant-menu-first"] #counter.restaurant-stats { background: #173b30; }
-      body[data-template="restaurant-menu-first"] #contact { background: #d8eaa7; }
-      body[data-template="restaurant-menu-first"] .restaurant-contact-intro h3 { color: #173b30; font-size: 44px; font-weight: 900; }
-      body[data-template="restaurant-menu-first"] .restaurant-contact-item { color: #173b30; border-color: rgba(23, 59, 48, 0.26); }
-      body[data-template="restaurant-menu-first"] .restaurant-contact-item strong { color: #173b30; }
-      body[data-template="restaurant-menu-first"] .copyright { background: #173b30; }
+      body[data-template="restaurant-menu-first"] #about .feature-content p { color: var(--site-dark); }
+      body[data-template="restaurant-menu-first"] #counter.restaurant-stats { background: var(--site-dark); }
+      body[data-template="restaurant-menu-first"] #contact { background: #f8fafc; }
+      body[data-template="restaurant-menu-first"] .restaurant-contact-intro h3 { color: var(--site-dark); font-size: 44px; font-weight: 900; }
+      body[data-template="restaurant-menu-first"] .restaurant-contact-item { color: var(--site-dark); border-color: color-mix(in srgb, var(--site-primary) 18%, #e2e8f0); }
+      body[data-template="restaurant-menu-first"] .restaurant-contact-item strong { color: var(--site-dark); }
+      body[data-template="restaurant-menu-first"] .copyright { background: var(--site-dark); }
       body[data-template^="fashion-"] {
         background: #f7f7f4;
         color: #232323;
@@ -1303,7 +1359,7 @@
       body[data-template="fashion-boutique"] #hero-area .contents .hero-subtitle,
       body[data-template="fashion-boutique"] .hero-kicker { color: #4b3338; }
       body[data-template="fashion-boutique"] #hero-area .contents .head-title { font-weight: 400; }
-      body[data-template="fashion-boutique"] #hero-area .btn-border { border-color: #4b3338; color: #4b3338; }
+      body[data-template="fashion-boutique"] #hero-area .btn-border { background: #fff; border-color: #fff; color: #4b3338; }
       body[data-template="fashion-boutique"] #blog .blog-item-img { border-radius: 160px 160px 10px 10px; }
       body[data-template="fashion-boutique"] #services .services-item { background: #fff; border-color: #ead7d1; border-radius: 70px 70px 12px 12px; }
 
@@ -1397,6 +1453,8 @@
       body[data-template="institutional-slate"] #hero-area.hero-area-bg { background: #4d5876 !important; }
       body[data-template="institutional-slate"] #hero-area .hero-stage::after { background: linear-gradient(90deg, rgba(12,18,57,.71) 0 38%, rgba(12,18,57,.31) 63%, rgba(12,18,57,.02) 90%); }
       body[data-template="institutional-slate"] #hero-area .contents .head-title { font-family: "Poppins", Arial, sans-serif; font-size: clamp(40px, 5.9vw, 66px); font-weight: 700; line-height: 1.14; max-width: 690px; }
+      body[data-template="institutional-slate"] #hero-area .contents .head-title,
+      body[data-template="institutional-slate"] #hero-area .contents .hero-subtitle { color: #fff; }
       body[data-template="institutional-slate"] .hero-kicker,
       body[data-template="institutional-slate"] .section-kicker { color: #4d5876; font-family: "Poppins", Arial, sans-serif; font-weight: 700; }
       body[data-template="institutional-slate"] #hero-area .hero-kicker { color: #00a0e0; }
@@ -1408,7 +1466,7 @@
       body[data-template="institutional-slate"] #about { background: #fff; }
       body[data-template="institutional-slate"] #services { background: #eef0f4; overflow: hidden; position: relative; }
       body[data-template="institutional-slate"] section { scroll-margin-top: 78px; }
-      body[data-template="institutional-slate"] #services::before { color: rgba(77,88,118,.08); content: "sabores"; font-family: "Poppins", Arial, sans-serif; font-size: clamp(80px, 15vw, 230px); font-weight: 800; letter-spacing: -.08em; line-height: .8; position: absolute; right: -10px; top: 36px; writing-mode: vertical-rl; }
+      body[data-template="institutional-slate"] #services::before { content: none; }
       body[data-template="institutional-slate"] #services .services-item { background: transparent; border: 0; border-radius: 0; box-shadow: none; padding: 0 12px 28px; position: relative; }
       body[data-template="institutional-slate"] #services .services-item .icon i { background: #4d5876; border-radius: 4px; }
       body[data-template="institutional-slate"] #services .services-item h3 a { color: #1c1c1c; font-family: "Poppins", Arial, sans-serif; }
@@ -1728,7 +1786,7 @@
           </div>
         </div>
       </div>
-      <div class="restaurant-quick-info"><div class="container"><a href="tel:960000255"><i class="lni-phone-handset"></i><span><small>Reservas</small><strong>960 000 255</strong></span></a><div><i class="lni-alarm-clock"></i><span><small>Horário</small><strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</strong></span></div><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><small>Como chegar</small><strong>Estr. Da Circunvalação 7938C, 4200-162 Porto, Portugal</strong></span></a></div></div>
+      <div class="restaurant-quick-info"><div class="container"><a href="tel:960000255"><i class="lni-phone-handset"></i><span><small>Reservas</small><strong>960 000 255</strong></span></a><div><i class="lni-alarm-clock"></i><span><small>Horário</small><strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</strong></span></div><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><small>Como chegar</small><strong>Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal</strong></span></a></div></div>
     </header>
 
     <main id="main-content">
@@ -1889,7 +1947,7 @@
             <p>Confirma o horário e entra em contacto diretamente com Cervejaria dos Cachorrinhos.</p>
             <div class="restaurant-contact-actions"><a class="btn btn-common" href="tel:960000255">Ligar agora</a><a class="btn btn-border" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener">Abrir no mapa</a></div>
           </div>
-          <div class="restaurant-contact-list"><a class="restaurant-contact-item" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><strong>Localização</strong>Estr. Da Circunvalação 7938C, 4200-162 Porto, Portugal</span></a><a class="restaurant-contact-item" href="tel:960000255"><i class="lni-phone-handset"></i><span><strong>Telefone</strong>960 000 255</span></a><div class="restaurant-contact-item"><i class="lni-alarm-clock"></i><span><strong>Horário</strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</span></div></div>
+          <div class="restaurant-contact-list"><a class="restaurant-contact-item" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><strong>Localização</strong>Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal</span></a><a class="restaurant-contact-item" href="tel:960000255"><i class="lni-phone-handset"></i><span><strong>Telefone</strong>960 000 255</span></a><div class="restaurant-contact-item"><i class="lni-alarm-clock"></i><span><strong>Horário</strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</span></div></div>
         </div>
         
         <div class="whatsapp-reservation-card">

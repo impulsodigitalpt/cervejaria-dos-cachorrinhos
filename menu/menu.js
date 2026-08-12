@@ -205,7 +205,9 @@
     document.body.classList.remove("is-loading");
     const themeColor = document.querySelector('meta[name="theme-color"]');
     if (themeColor && data.settings.appearance === "dark") themeColor.content = data.theme?.dark || "#120d0a";
-    document.title = `${data.settings.title} | ${data.business.name}`;
+    if (!document.title.trim() || document.title.trim().toLowerCase() === "menu digital") {
+      document.title = `${data.settings.title} | ${data.business.name}`;
+    }
     if (refs.footerName) refs.footerName.textContent = data.business.name;
     if (refs.footerNote) refs.footerNote.textContent = data.settings.note;
   }
