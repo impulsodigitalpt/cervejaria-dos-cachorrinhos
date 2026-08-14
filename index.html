@@ -2,6 +2,7 @@
 <html lang="pt">
   <head>
     <meta charset="utf-8">
+    <script>window.__siteRuntimeErrors=[];window.addEventListener("error",function(e){window.__siteRuntimeErrors.push(String(e.message||"Erro de execução"));});window.addEventListener("unhandledrejection",function(e){window.__siteRuntimeErrors.push(String(e.reason||"Promessa rejeitada"));});</script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.">
     <meta property="og:type" content="website">
@@ -10,6 +11,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cervejaria dos Cachorrinhos | Petiscos no Porto">
     <meta name="twitter:description" content="Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.">
+    <meta name="site-content-hash" content="0768f2bb48ffe395088613266af269487f312450bca2ae7a49242250339a3e0e">
     <meta property="og:image" content="https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png">
     <meta name="twitter:image" content="https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png">
     <meta name="theme-color" content="#2b160b">
@@ -21,8 +23,10 @@
     <script>(function(){var h="cervejariadoscachorrinhos.pt";var c=location.hostname.toLowerCase();if((c===h||c==='www.'+h)&&(location.protocol!=='https:'||c!==h)){location.replace("https://cervejariadoscachorrinhos.pt"+location.pathname+location.search+location.hash);}})();</script>
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-96.png" type="image/png" sizes="96x96">
     <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/line-icons.css">
@@ -33,7 +37,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "@id": "https://cervejariadoscachorrinhos.pt/#restaurant", "name": "Cervejaria dos Cachorrinhos", "description": "Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.", "telephone": "960 000 255", "address": {"@type": "PostalAddress", "streetAddress": "Estrada da Circunvalação 7938C", "postalCode": "4200-162", "addressLocality": "Porto", "addressCountry": "PT"}, "url": "https://cervejariadoscachorrinhos.pt/", "image": "https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png", "priceRange": "€€", "servesCuisine": ["Portuguesa", "Petiscos", "Francesinhas"], "openingHours": ["Tu-Sa 12:00-00:00", "Su 16:00-00:00"], "openingHoursSpecification": [{"dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "12:00", "closes": "00:00"}, {"dayOfWeek": "Sunday", "opens": "16:00", "closes": "00:00"}], "hasMap": "https://maps.google.com/?cid=9674207424615124378&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA", "sameAs": ["https://www.instagram.com/cervejariadoscachorrinhos/"], "hasMenu": "https://cervejariadoscachorrinhos.pt/menu/"}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "@id": "https://cervejariadoscachorrinhos.pt/#restaurant", "name": "Cervejaria dos Cachorrinhos", "description": "Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.", "telephone": "960 000 255", "address": {"@type": "PostalAddress", "streetAddress": "Estrada da Circunvalação 7938C", "postalCode": "4200-162", "addressLocality": "Porto", "addressCountry": "PT"}, "url": "https://cervejariadoscachorrinhos.pt/", "image": "https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png", "priceRange": "€€", "servesCuisine": ["Portuguesa", "Petiscos", "Francesinhas"], "openingHours": ["Tu-Sa 12:00-00:00", "Su 16:00-00:00"], "openingHoursSpecification": [{"dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "12:00", "closes": "00:00"}, {"dayOfWeek": "Sunday", "opens": "16:00", "closes": "00:00"}], "hasMap": "https://maps.google.com/?cid=9674207424615124378&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA", "sameAs": ["https://www.instagram.com/cervejariadoscachorrinhos/", "https://www.facebook.com/carloscervejariacachorrinhos"], "hasMenu": "https://cervejariadoscachorrinhos.pt/menu/"}</script>
     <style>
       :root {
         --site-primary: #b91c1c;
@@ -739,36 +743,177 @@
         text-transform: uppercase;
       }
       .whatsapp-reservation-card {
-        background: #f7fbf8;
-        border: 1px solid #dce9df;
-        border-radius: 24px;
+        background:
+          radial-gradient(circle at 90% 10%, color-mix(in srgb, var(--site-secondary) 16%, transparent), transparent 32%),
+          linear-gradient(145deg, #f8fcf9, #eef8f2);
+        border: 1px solid color-mix(in srgb, var(--site-primary) 15%, #dce9df);
+        border-radius: 28px;
         display: grid;
         gap: 30px;
-        grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+        grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
         margin-top: 48px;
-        padding: 34px;
+        overflow: hidden;
+        padding: 38px;
+        position: relative;
       }
       .whatsapp-reservation-heading h3 { color: var(--site-dark); font-size: 30px; margin: 10px 0 12px; }
       .whatsapp-reservation-heading p { margin: 0; }
-      .whatsapp-reservation-form { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .whatsapp-reservation-form label { color: var(--site-dark); display: grid; font-size: 13px; font-weight: 700; gap: 6px; }
+      .whatsapp-reservation-launch {
+        align-items: center;
+        background: rgba(255,255,255,.86);
+        border: 1px solid rgba(255,255,255,.92);
+        border-radius: 22px;
+        box-shadow: 0 20px 50px rgba(20, 83, 45, .09);
+        display: grid;
+        gap: 16px;
+        grid-template-columns: auto minmax(0,1fr);
+        padding: 20px;
+      }
+      .reservation-launch-icon,
+      .reservation-step-icon {
+        align-items: center;
+        background: linear-gradient(135deg, var(--site-primary), var(--site-secondary));
+        border-radius: 18px;
+        color: #fff;
+        display: inline-flex;
+        flex: 0 0 auto;
+        font-size: 24px;
+        height: 54px;
+        justify-content: center;
+        width: 54px;
+      }
+      .whatsapp-reservation-launch strong { color: var(--site-dark); display: block; font-size: 16px; }
+      .whatsapp-reservation-launch small { color: #657068; display: block; font-size: 13px; line-height: 1.45; margin-top: 4px; }
+      .whatsapp-reservation-open { grid-column: 1 / -1; justify-content: center; margin: 0; width: 100%; }
+      .whatsapp-reservation-form { display: block; }
+      .whatsapp-reservation-form label { color: var(--site-dark); display: grid; font-size: 13px; font-weight: 700; gap: 7px; }
       .whatsapp-reservation-form label span small { color: #6d756f; font-weight: 400; }
       .whatsapp-reservation-form input,
       .whatsapp-reservation-form textarea {
         background: #fff;
-        border: 1px solid #cad8ce;
-        border-radius: 10px;
+        border: 1px solid #cfdbd2;
+        border-radius: 14px;
         color: #1e2921;
         font: inherit;
-        min-height: 48px;
-        padding: 11px 13px;
+        min-height: 52px;
+        padding: 12px 14px;
         width: 100%;
       }
       .whatsapp-reservation-form input:focus,
       .whatsapp-reservation-form textarea:focus { border-color: #18864b; box-shadow: 0 0 0 3px rgba(24, 134, 75, 0.13); outline: 0; }
-      .reservation-notes,
-      .whatsapp-reservation-submit,
-      .reservation-disclaimer { grid-column: 1 / -1; }
+      .reservation-dialog {
+        background: transparent;
+        border: 0;
+        color: #334139;
+        max-height: min(820px, calc(100vh - 32px));
+        max-width: 680px;
+        overflow: visible;
+        padding: 0;
+        width: calc(100% - 32px);
+      }
+      body.reservation-modal-open { overflow: hidden; }
+      .reservation-dialog::backdrop {
+        animation: reservation-backdrop-in .24s ease both;
+        backdrop-filter: blur(7px);
+        background: rgba(10, 20, 14, .68);
+      }
+      .reservation-dialog[open] .whatsapp-reservation-form {
+        animation: reservation-dialog-in .42s cubic-bezier(.2,.8,.2,1) both;
+        background: #f9fcfa;
+        border: 1px solid rgba(255,255,255,.8);
+        border-radius: 28px;
+        box-shadow: 0 34px 90px rgba(7, 28, 16, .34);
+        max-height: min(820px, calc(100vh - 32px));
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 28px;
+      }
+      .reservation-dialog-topbar { align-items: flex-start; display: flex; gap: 18px; justify-content: space-between; }
+      .reservation-dialog-kicker { color: var(--site-primary); display: block; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+      .reservation-dialog-topbar h3 { color: var(--site-dark); font-size: 28px; margin: 5px 0 0; }
+      .reservation-dialog-close {
+        align-items: center;
+        background: #edf3ef;
+        border: 0;
+        border-radius: 50%;
+        color: #304339;
+        display: inline-flex;
+        flex: 0 0 auto;
+        font-size: 28px;
+        height: 42px;
+        justify-content: center;
+        line-height: 1;
+        padding: 0 0 3px;
+        transition: background-color .2s ease, transform .2s ease;
+        width: 42px;
+      }
+      .reservation-dialog-close:hover,
+      .reservation-dialog-close:focus-visible { background: #dce9df; outline: 3px solid rgba(24,134,75,.16); transform: rotate(6deg); }
+      .reservation-progress { align-items: center; display: grid; gap: 8px; grid-template-columns: auto 1fr auto 1fr auto; margin: 25px 0 30px; }
+      .reservation-progress > span { align-items: center; color: #819086; display: flex; flex-direction: column; gap: 5px; }
+      .reservation-progress b {
+        align-items: center;
+        background: #e5ece7;
+        border-radius: 50%;
+        display: inline-flex;
+        font-size: 12px;
+        height: 30px;
+        justify-content: center;
+        transition: background-color .25s ease, color .25s ease, transform .25s ease;
+        width: 30px;
+      }
+      .reservation-progress small { font-size: 10px; font-weight: 700; text-transform: uppercase; }
+      .reservation-progress i { background: #dfe8e2; height: 2px; position: relative; top: -9px; }
+      .reservation-progress span.is-active,
+      .reservation-progress span.is-complete { color: var(--site-primary); }
+      .reservation-progress span.is-active b { background: var(--site-primary); color: #fff; transform: scale(1.12); }
+      .reservation-progress span.is-complete b { background: #cfe7d7; color: #126a3a; }
+      .reservation-step[hidden] { display: none; }
+      .reservation-step.is-active { animation: reservation-step-in .36s cubic-bezier(.2,.8,.2,1) both; }
+      .reservation-step-copy { align-items: center; display: flex; gap: 16px; margin-bottom: 24px; }
+      .reservation-step-copy > div > span { color: var(--site-primary); display: block; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+      .reservation-step-copy h4 { color: var(--site-dark); font-size: 27px; margin: 3px 0 3px; }
+      .reservation-step-copy p { color: #6b766f; font-size: 14px; margin: 0; }
+      .reservation-people-grid { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); }
+      .reservation-people-grid button {
+        background: #fff;
+        border: 1px solid #d8e3db;
+        border-radius: 17px;
+        color: var(--site-dark);
+        min-height: 78px;
+        padding: 10px;
+        transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease, background-color .2s ease;
+      }
+      .reservation-people-grid button:hover,
+      .reservation-people-grid button:focus-visible { border-color: var(--site-primary); box-shadow: 0 10px 25px rgba(20,83,45,.11); outline: 0; transform: translateY(-3px); }
+      .reservation-people-grid button.is-selected { background: color-mix(in srgb, var(--site-primary) 9%, #fff); border-color: var(--site-primary); box-shadow: inset 0 0 0 1px var(--site-primary); }
+      .reservation-people-grid strong { display: block; font-size: 23px; line-height: 1; }
+      .reservation-people-grid small { color: #748078; display: block; font-size: 11px; margin-top: 5px; }
+      .reservation-custom-people { margin-top: 15px; }
+      .reservation-datetime-grid { display: grid; gap: 15px; grid-template-columns: 1.2fr .8fr; }
+      .reservation-input-shell { align-items: center; display: flex; position: relative; }
+      .reservation-input-shell > i { color: var(--site-primary); font-size: 20px; left: 16px; pointer-events: none; position: absolute; z-index: 1; }
+      .reservation-input-shell input { font-size: 17px; font-weight: 700; padding-left: 48px; }
+      .reservation-final-fields { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+      .reservation-final-fields .reservation-notes { grid-column: 1 / -1; }
+      .reservation-summary {
+        background: color-mix(in srgb, var(--site-primary) 7%, #fff);
+        border: 1px solid color-mix(in srgb, var(--site-primary) 18%, #dce8df);
+        border-radius: 17px;
+        color: #405148;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 13px;
+        gap: 8px 14px;
+        margin-top: 17px;
+        padding: 14px 16px;
+      }
+      .reservation-summary span { align-items: center; display: inline-flex; gap: 6px; }
+      .reservation-summary i { color: var(--site-primary); }
+      .reservation-step-actions { align-items: center; display: flex; gap: 12px; justify-content: space-between; margin-top: 24px; }
+      .reservation-step-actions-end { justify-content: flex-end; }
+      .reservation-step-actions .btn { align-items: center; display: inline-flex; gap: 8px; justify-content: center; margin: 0; min-width: 132px; }
+      .reservation-step-actions .btn:disabled { cursor: not-allowed; filter: grayscale(.45); opacity: .48; transform: none; }
       .whatsapp-reservation-submit {
         align-items: center;
         background: #168b4c;
@@ -780,6 +925,11 @@
       }
       .whatsapp-reservation-submit:hover { background: #0f713d; border-color: #0f713d; }
       .reservation-disclaimer { color: #657068; font-size: 12px; line-height: 1.5; margin: 0; }
+      .whatsapp-reservation-launch .reservation-disclaimer { grid-column: 1 / -1; }
+      .reservation-step .reservation-disclaimer { margin-top: 14px; text-align: center; }
+      @keyframes reservation-backdrop-in { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes reservation-dialog-in { from { opacity: 0; transform: translateY(24px) scale(.96); } to { opacity: 1; transform: none; } }
+      @keyframes reservation-step-in { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: none; } }
       .restaurant-footer {
         align-items: center;
         display: flex;
@@ -1612,11 +1762,22 @@
           gap: 28px;
           grid-template-columns: 1fr;
         }
-        .whatsapp-reservation-card { grid-template-columns: 1fr; padding: 24px 18px; }
-        .whatsapp-reservation-form { grid-template-columns: 1fr; }
-        .reservation-notes,
-        .whatsapp-reservation-submit,
-        .reservation-disclaimer { grid-column: auto; }
+        .whatsapp-reservation-card { gap: 22px; grid-template-columns: 1fr; padding: 24px 18px; }
+        .reservation-dialog { max-height: 100dvh; width: 100%; }
+        .reservation-dialog[open] .whatsapp-reservation-form { border-radius: 24px 24px 0 0; max-height: min(92dvh, 820px); padding: 22px 17px calc(20px + env(safe-area-inset-bottom)); }
+        .reservation-dialog-topbar h3 { font-size: 23px; }
+        .reservation-progress { margin: 20px 0 24px; }
+        .reservation-step-copy { align-items: flex-start; gap: 12px; }
+        .reservation-step-icon { border-radius: 15px; font-size: 20px; height: 46px; width: 46px; }
+        .reservation-step-copy h4 { font-size: 23px; }
+        .reservation-people-grid { grid-template-columns: repeat(3, 1fr); }
+        .reservation-people-grid button { min-height: 70px; }
+        .reservation-datetime-grid,
+        .reservation-final-fields { grid-template-columns: 1fr; }
+        .reservation-final-fields .reservation-notes { grid-column: auto; }
+        .reservation-step-actions { align-items: stretch; }
+        .reservation-step-actions .btn { min-width: 0; padding-left: 16px; padding-right: 16px; }
+        .reservation-step-actions .whatsapp-reservation-submit { flex: 1; }
         .restaurant-contact-intro h3 { font-size: 27px; }
         .restaurant-footer {
           align-items: flex-start;
@@ -1780,7 +1941,7 @@
                   <h1 class="head-title">Cervejaria dos Cachorrinhos</h1>
                   <p class="hero-subtitle">Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação, no Porto.</p>
                   <div class="header-button">
-                    <a href="#contact" class="btn btn-common">Reservar pelo WhatsApp</a>
+                    <a href="tel:960000255" class="btn btn-common">Reservar pelo WhatsApp</a>
                     <a href="menu/" class="btn btn-border">Ver menu</a>
                   </div>
                 </div>
@@ -1789,7 +1950,7 @@
           </div>
         </div>
       </div>
-      <div class="restaurant-quick-info"><div class="container"><a href="tel:960000255"><i class="lni-phone-handset"></i><span><small>Reservas</small><strong>960 000 255</strong></span></a><div><i class="lni-alarm-clock"></i><span><small>Horário</small><strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</strong></span></div><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><small>Como chegar</small><strong>Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal</strong></span></a></div></div>
+      <div class="restaurant-quick-info"><div class="container"><a href="tel:960000255"><i class="lni-phone-handset"></i><span><small>Contacto</small><strong>960 000 255</strong></span></a><div><i class="lni-alarm-clock"></i><span><small>Horário</small><strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</strong></span></div><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><small>Como chegar</small><strong>Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal</strong></span></a></div></div>
     </header>
 
     <main id="main-content">
@@ -1953,23 +2114,6 @@
           <div class="restaurant-contact-list"><a class="restaurant-contact-item" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><strong>Localização</strong>Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal</span></a><a class="restaurant-contact-item" href="tel:960000255"><i class="lni-phone-handset"></i><span><strong>Telefone</strong>960 000 255</span></a><div class="restaurant-contact-item"><i class="lni-alarm-clock"></i><span><strong>Horário</strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</span></div></div>
         </div>
         
-        <div class="whatsapp-reservation-card">
-          <div class="whatsapp-reservation-heading">
-            <span class="section-kicker">Reserva</span>
-            <h3>Pedir reserva pelo WhatsApp</h3>
-            <p>Preenche os dados e envia o pedido. A reserva só fica confirmada depois da resposta do restaurante.</p>
-          </div>
-          <form class="whatsapp-reservation-form" data-whatsapp-reservation data-whatsapp-number="351960000255" data-business-name="Cervejaria dos Cachorrinhos" data-message-intro="Olá! Gostaria de pedir uma reserva.">
-            <label><span>Nome</span><input type="text" name="name" autocomplete="name" required maxlength="80"></label>
-            <label><span>Telefone</span><input type="tel" name="phone" autocomplete="tel" required maxlength="24" placeholder="+351 900 000 000"></label>
-            <label><span>Data</span><input type="date" name="date" required></label>
-            <label><span>Hora</span><input type="time" name="time" required></label>
-            <label><span>Número de pessoas</span><input type="number" name="people" required min="1" max="50" inputmode="numeric"></label>
-            <label class="reservation-notes"><span>Observações <small>(opcional)</small></span><textarea name="notes" rows="3" maxlength="300"></textarea></label>
-            <button class="btn btn-common whatsapp-reservation-submit" type="submit"><i class="lni-whatsapp"></i>Enviar pelo WhatsApp</button>
-            <p class="reservation-disclaimer">Este formulário abre o WhatsApp. A reserva só fica confirmada quando o estabelecimento responder.</p>
-          </form>
-        </div>
       </div>
     </section>
     <section id="counter" class="restaurant-stats section-padding">
@@ -2008,12 +2152,12 @@
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.2s">Presença online</h2>
           <p>Segue, consulta avaliações e encontra o negócio nos canais oficiais.</p>
         </div>
-        <div class="online-presence-grid"><a class="online-presence-card presence-google-maps wow fadeInUp" data-wow-delay="0.20s" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer"><span class="online-presence-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg></span><span><strong>Google Maps</strong><small>Ver localização e avaliações</small></span><i class="lni-arrow-top-right"></i></a><a class="online-presence-card presence-instagram wow fadeInUp" data-wow-delay="0.32s" href="https://www.instagram.com/cervejariadoscachorrinhos/" target="_blank" rel="noopener noreferrer"><span class="online-presence-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="solid"/></svg></span><span><strong>Instagram</strong><small>@cervejariadoscachorrinhos</small></span><i class="lni-arrow-top-right"></i></a></div>
+        <div class="online-presence-grid"><a class="online-presence-card presence-google-maps wow fadeInUp" data-wow-delay="0.20s" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer"><span class="online-presence-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg></span><span><strong>Google Maps</strong><small>Ver localização e avaliações</small></span><i class="lni-arrow-top-right"></i></a><a class="online-presence-card presence-instagram wow fadeInUp" data-wow-delay="0.32s" href="https://www.instagram.com/cervejariadoscachorrinhos/" target="_blank" rel="noopener noreferrer"><span class="online-presence-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="solid"/></svg></span><span><strong>Instagram</strong><small>@cervejariadoscachorrinhos</small></span><i class="lni-arrow-top-right"></i></a><a class="online-presence-card presence-facebook wow fadeInUp" data-wow-delay="0.44s" href="https://www.facebook.com/carloscervejariacachorrinhos" target="_blank" rel="noopener noreferrer"><span class="online-presence-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3H14V8.4c0-.9.3-1.5 1.6-1.5H18V4.2c-.7-.1-1.6-.2-2.7-.2-2.7 0-4.5 1.6-4.5 4.6V10H8v3h2.8v8H14Z" class="solid"/></svg></span><span><strong>Facebook</strong><small>Cervejaria dos Cachorrinhos</small></span><i class="lni-arrow-top-right"></i></a></div>
       </div>
     </section>
     </main>
 
-    <nav class="mobile-action-bar" aria-label="Ações rápidas"><a href="tel:960000255"><i class="lni-phone-handset"></i><span>Ligar</span></a><a href="https://wa.me/351960000255" target="_blank" rel="noopener"><i class="lni-whatsapp"></i><span>WhatsApp</span></a><a href="menu/"><i class="lni-dinner"></i><span>Menu</span></a><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span>Direções</span></a></nav>
+    <nav class="mobile-action-bar" aria-label="Ações rápidas"><a href="tel:960000255"><i class="lni-phone-handset"></i><span>Ligar</span></a><a href="menu/"><i class="lni-dinner"></i><span>Menu</span></a><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span>Direções</span></a></nav>
 
     <div class="copyright">
       <div class="container">
@@ -2075,6 +2219,21 @@
             revealItems.forEach(function (item) { revealObserver.observe(item); });
           }
         }
+        function labelCarouselControls() {
+          document.querySelectorAll(".owl-dots").forEach(function (group, groupIndex) {
+            group.setAttribute("role", "group");
+            group.setAttribute("aria-label", "Navegação do carrossel " + (groupIndex + 1));
+            group.querySelectorAll(".owl-dot").forEach(function (button, buttonIndex) {
+              button.setAttribute("aria-label", "Mostrar slide " + (buttonIndex + 1));
+            });
+          });
+        }
+        labelCarouselControls();
+        document.addEventListener("DOMContentLoaded", function () { window.setTimeout(labelCarouselControls, 0); });
+        window.addEventListener("load", function () {
+          labelCarouselControls();
+          window.setTimeout(labelCarouselControls, 300);
+        });
         var carousels = document.querySelectorAll("[data-hero-carousel]");
         carousels.forEach(function (carousel) {
           var slides = carousel.querySelectorAll(".hero-slide");
@@ -2088,12 +2247,145 @@
           }, interval);
         });
         document.querySelectorAll("[data-whatsapp-reservation]").forEach(function (form) {
+          var dialog = form.closest("[data-reservation-dialog]");
+          var openButton = document.querySelector("[data-reservation-open]");
+          var closeButton = form.querySelector("[data-reservation-close]");
+          var steps = Array.prototype.slice.call(form.querySelectorAll("[data-reservation-step]"));
+          var progress = Array.prototype.slice.call(form.querySelectorAll("[data-reservation-progress]"));
+          var announcement = form.querySelector("[data-reservation-announcement]");
+          var peopleInput = form.querySelector('[name="people"]');
+          var peopleButtons = Array.prototype.slice.call(form.querySelectorAll("[data-reservation-people]"));
+          var customPeopleButton = form.querySelector("[data-reservation-custom-people]");
+          var customPeopleLabel = form.querySelector(".reservation-custom-people");
+          var customPeopleInput = form.querySelector("[data-reservation-custom-people-input]");
           var dateInput = form.querySelector('[name="date"]');
+          var timeInput = form.querySelector('[name="time"]');
+          var nameInput = form.querySelector('[name="name"]');
+          var summary = form.querySelector("[data-reservation-summary]");
+          var currentStep = 0;
+          var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
           if (dateInput) {
             var today = new Date();
             var localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
             dateInput.setAttribute("min", localToday);
           }
+
+          function formatReservationDate(value) {
+            var parts = String(value || "").split("-");
+            return parts.length === 3 ? parts[2] + "/" + parts[1] + "/" + parts[0] : value;
+          }
+
+          function updateSummary() {
+            if (!summary) return;
+            summary.innerHTML =
+              '<span><i class="lni-users" aria-hidden="true"></i>' + (peopleInput.value || "—") + ' pessoas</span>' +
+              '<span><i class="lni-calendar" aria-hidden="true"></i>' + (formatReservationDate(dateInput.value) || "—") + '</span>' +
+              '<span><i class="lni-alarm-clock" aria-hidden="true"></i>' + (timeInput.value || "—") + '</span>';
+          }
+
+          function showStep(index, focusTarget) {
+            currentStep = Math.max(0, Math.min(index, steps.length - 1));
+            steps.forEach(function (step, stepIndex) {
+              var active = stepIndex === currentStep;
+              step.hidden = !active;
+              step.classList.toggle("is-active", active);
+            });
+            progress.forEach(function (item, progressIndex) {
+              item.classList.toggle("is-active", progressIndex === currentStep);
+              item.classList.toggle("is-complete", progressIndex < currentStep);
+            });
+            if (announcement) announcement.textContent = "Passo " + (currentStep + 1) + " de " + steps.length;
+            if (currentStep === 2) updateSummary();
+            var target = focusTarget || steps[currentStep].querySelector("button:not([disabled]), input, textarea");
+            if (target) window.setTimeout(function () { target.focus({ preventScroll: true }); }, reducedMotion ? 0 : 230);
+          }
+
+          function resetReservation() {
+            form.reset();
+            peopleButtons.forEach(function (button) { button.classList.remove("is-selected"); button.setAttribute("aria-pressed", "false"); });
+            if (customPeopleButton) { customPeopleButton.classList.remove("is-selected"); customPeopleButton.setAttribute("aria-expanded", "false"); }
+            if (customPeopleLabel) customPeopleLabel.hidden = true;
+            peopleInput.value = "";
+            showStep(0, peopleButtons[0]);
+          }
+
+          function openReservation() {
+            resetReservation();
+            if (dialog.showModal) dialog.showModal();
+            else { dialog.setAttribute("open", ""); dialog.setAttribute("role", "dialog"); dialog.setAttribute("aria-modal", "true"); }
+            document.body.classList.add("reservation-modal-open");
+          }
+
+          function closeReservation() {
+            if (dialog.close) dialog.close();
+            else dialog.removeAttribute("open");
+            document.body.classList.remove("reservation-modal-open");
+            if (openButton) openButton.focus({ preventScroll: true });
+          }
+
+          if (openButton) openButton.onclick = openReservation;
+          if (closeButton) closeButton.addEventListener("click", closeReservation);
+          if (dialog) {
+            dialog.addEventListener("click", function (event) { if (event.target === dialog) closeReservation(); });
+            dialog.addEventListener("cancel", function (event) { event.preventDefault(); closeReservation(); });
+            dialog.addEventListener("keydown", function (event) {
+              if (event.key === "Escape") { event.preventDefault(); closeReservation(); return; }
+              if (event.key !== "Tab" || dialog.showModal) return;
+              var focusable = Array.prototype.slice.call(dialog.querySelectorAll('button:not([disabled]), input:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')).filter(function (item) { return !item.closest("[hidden]"); });
+              if (!focusable.length) return;
+              var first = focusable[0];
+              var last = focusable[focusable.length - 1];
+              if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+              else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+            });
+          }
+
+          peopleButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+              peopleButtons.forEach(function (item) { item.classList.remove("is-selected"); item.setAttribute("aria-pressed", "false"); });
+              if (customPeopleButton) customPeopleButton.classList.remove("is-selected");
+              button.classList.add("is-selected");
+              button.setAttribute("aria-pressed", "true");
+              peopleInput.value = button.getAttribute("data-reservation-people");
+              var next = steps[0].querySelector("[data-reservation-next]");
+              if (next) next.disabled = false;
+              window.setTimeout(function () { showStep(1, dateInput); }, reducedMotion ? 0 : 260);
+            });
+          });
+
+          if (customPeopleButton) customPeopleButton.addEventListener("click", function () {
+            peopleButtons.forEach(function (item) { item.classList.remove("is-selected"); item.setAttribute("aria-pressed", "false"); });
+            customPeopleButton.classList.add("is-selected");
+            customPeopleButton.setAttribute("aria-expanded", "true");
+            customPeopleLabel.hidden = false;
+            peopleInput.value = "";
+            customPeopleInput.focus();
+          });
+          if (customPeopleInput) customPeopleInput.addEventListener("input", function () {
+            var value = Math.max(0, Math.min(50, parseInt(customPeopleInput.value || "0", 10)));
+            peopleInput.value = value >= 9 ? String(value) : "";
+            var next = steps[0].querySelector("[data-reservation-next]");
+            if (next) next.disabled = !peopleInput.value;
+          });
+
+          form.querySelectorAll("[data-reservation-next]").forEach(function (button) {
+            button.addEventListener("click", function () {
+              if (currentStep === 0) {
+                if (!peopleInput.value) return;
+                showStep(1, dateInput);
+                return;
+              }
+              if (currentStep === 1) {
+                if (!dateInput.reportValidity() || !timeInput.reportValidity()) return;
+                showStep(2, nameInput);
+              }
+            });
+          });
+          form.querySelectorAll("[data-reservation-back]").forEach(function (button) {
+            button.addEventListener("click", function () { showStep(currentStep - 1); });
+          });
+
           form.addEventListener("submit", function (event) {
             event.preventDefault();
             if (!form.reportValidity()) return;
@@ -2102,13 +2394,14 @@
               form.getAttribute("data-message-intro") || "Olá! Gostaria de pedir uma reserva.",
               "",
               "Estabelecimento: " + (form.getAttribute("data-business-name") || ""),
-              "Nome: " + data.get("name"),
-              "Telefone: " + data.get("phone"),
-              "Data: " + data.get("date"),
+              "Nome: " + String(data.get("name") || "").trim(),
+              "Data: " + formatReservationDate(data.get("date")),
               "Hora: " + data.get("time"),
               "Pessoas: " + data.get("people")
             ];
+            var phone = String(data.get("phone") || "").trim();
             var notes = String(data.get("notes") || "").trim();
+            if (phone) lines.splice(4, 0, "Telefone: " + phone);
             if (notes) lines.push("Observações: " + notes);
             lines.push("", "Aguardo confirmação. Obrigado!");
             var number = form.getAttribute("data-whatsapp-number");
