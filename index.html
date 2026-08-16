@@ -11,7 +11,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cervejaria dos Cachorrinhos | Petiscos no Porto">
     <meta name="twitter:description" content="Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.">
-    <meta name="site-content-hash" content="0768f2bb48ffe395088613266af269487f312450bca2ae7a49242250339a3e0e">
+    <meta name="site-content-hash" content="714f310a38ba6285e719744575736e857a53d06f2b327b2df725b0e9e1ebfc7d">
     <meta property="og:image" content="https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png">
     <meta name="twitter:image" content="https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png">
     <meta name="theme-color" content="#2b160b">
@@ -1941,7 +1941,7 @@
                   <h1 class="head-title">Cervejaria dos Cachorrinhos</h1>
                   <p class="hero-subtitle">Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação, no Porto.</p>
                   <div class="header-button">
-                    <a href="tel:960000255" class="btn btn-common">Reservar pelo WhatsApp</a>
+                    <a href="#contact" class="btn btn-common">Reservar pelo WhatsApp</a>
                     <a href="menu/" class="btn btn-border">Ver menu</a>
                   </div>
                 </div>
@@ -1950,7 +1950,7 @@
           </div>
         </div>
       </div>
-      <div class="restaurant-quick-info"><div class="container"><a href="tel:960000255"><i class="lni-phone-handset"></i><span><small>Contacto</small><strong>960 000 255</strong></span></a><div><i class="lni-alarm-clock"></i><span><small>Horário</small><strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</strong></span></div><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><small>Como chegar</small><strong>Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal</strong></span></a></div></div>
+      <div class="restaurant-quick-info"><div class="container"><a href="tel:960000255"><i class="lni-phone-handset"></i><span><small>Reservas</small><strong>960 000 255</strong></span></a><div><i class="lni-alarm-clock"></i><span><small>Horário</small><strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</strong></span></div><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><small>Como chegar</small><strong>Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal</strong></span></a></div></div>
     </header>
 
     <main id="main-content">
@@ -2114,6 +2114,76 @@
           <div class="restaurant-contact-list"><a class="restaurant-contact-item" href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span><strong>Localização</strong>Estr. da Circunvalação 7938C, 4200-162 Porto, Portugal</span></a><a class="restaurant-contact-item" href="tel:960000255"><i class="lni-phone-handset"></i><span><strong>Telefone</strong>960 000 255</span></a><div class="restaurant-contact-item"><i class="lni-alarm-clock"></i><span><strong>Horário</strong>Segunda-feira: Fechado · terça-feira: 12:00 – 00:00</span></div></div>
         </div>
         
+        <div class="whatsapp-reservation-card wow fadeInUp">
+          <div class="whatsapp-reservation-heading">
+            <span class="section-kicker">Reserva</span>
+            <h3>Pedir reserva pelo WhatsApp</h3>
+            <p>Preenche os dados e envia o pedido. A reserva só fica confirmada depois da resposta do restaurante.</p>
+          </div>
+          <div class="whatsapp-reservation-launch">
+            <span class="reservation-launch-icon" aria-hidden="true"><i class="lni-calendar"></i></span>
+            <div><strong>Reserva em menos de um minuto</strong><small>Escolhe pessoas, data e hora. O pedido segue pronto para o WhatsApp.</small></div>
+            <button class="btn btn-common whatsapp-reservation-open" type="button" data-reservation-open aria-haspopup="dialog"><i class="lni-whatsapp" aria-hidden="true"></i>Começar reserva</button>
+            <p class="reservation-disclaimer">Este formulário abre o WhatsApp. A reserva só fica confirmada quando o estabelecimento responder.</p>
+          </div>
+        </div>
+        <dialog class="reservation-dialog" data-reservation-dialog aria-labelledby="reservation-dialog-title">
+          <form class="whatsapp-reservation-form" data-whatsapp-reservation data-whatsapp-number="351960000255" data-business-name="Cervejaria dos Cachorrinhos" data-message-intro="Olá! Gostaria de pedir uma reserva.">
+            <div class="reservation-dialog-topbar">
+              <div>
+                <span class="reservation-dialog-kicker">Pedido de reserva</span>
+                <h3 id="reservation-dialog-title">Vamos preparar a tua mesa</h3>
+              </div>
+              <button class="reservation-dialog-close" type="button" data-reservation-close aria-label="Fechar pedido de reserva">&times;</button>
+            </div>
+            <div class="reservation-progress" aria-label="Progresso da reserva">
+              <span class="is-active" data-reservation-progress="0"><b>1</b><small>Pessoas</small></span>
+              <i aria-hidden="true"></i>
+              <span data-reservation-progress="1"><b>2</b><small>Quando</small></span>
+              <i aria-hidden="true"></i>
+              <span data-reservation-progress="2"><b>3</b><small>Nome</small></span>
+            </div>
+            <p class="sr-only" aria-live="polite" data-reservation-announcement></p>
+            <input type="hidden" name="people" required>
+            <section class="reservation-step is-active" data-reservation-step="0" aria-labelledby="reservation-step-people">
+              <div class="reservation-step-copy">
+                <span class="reservation-step-icon" aria-hidden="true"><i class="lni-users"></i></span>
+                <div><span>Primeiro passo</span><h4 id="reservation-step-people">Para quantas pessoas?</h4><p>Escolhe o tamanho do grupo.</p></div>
+              </div>
+              <div class="reservation-people-grid" role="group" aria-label="Número de pessoas">
+                <button type="button" data-reservation-people="1" aria-pressed="false"><strong>1</strong><small>pessoa</small></button><button type="button" data-reservation-people="2" aria-pressed="false"><strong>2</strong><small>pessoas</small></button><button type="button" data-reservation-people="3" aria-pressed="false"><strong>3</strong><small>pessoas</small></button><button type="button" data-reservation-people="4" aria-pressed="false"><strong>4</strong><small>pessoas</small></button><button type="button" data-reservation-people="5" aria-pressed="false"><strong>5</strong><small>pessoas</small></button><button type="button" data-reservation-people="6" aria-pressed="false"><strong>6</strong><small>pessoas</small></button><button type="button" data-reservation-people="7" aria-pressed="false"><strong>7</strong><small>pessoas</small></button><button type="button" data-reservation-people="8" aria-pressed="false"><strong>8</strong><small>pessoas</small></button>
+                <button type="button" data-reservation-custom-people aria-expanded="false"><strong>9+</strong><small>grupo</small></button>
+              </div>
+              <label class="reservation-custom-people" hidden><span>Indica quantas pessoas</span><input type="number" min="9" max="50" inputmode="numeric" data-reservation-custom-people-input></label>
+              <div class="reservation-step-actions reservation-step-actions-end"><button class="btn btn-common" type="button" data-reservation-next disabled>Continuar <i class="lni-arrow-right" aria-hidden="true"></i></button></div>
+            </section>
+            <section class="reservation-step" data-reservation-step="1" aria-labelledby="reservation-step-time" hidden>
+              <div class="reservation-step-copy">
+                <span class="reservation-step-icon" aria-hidden="true"><i class="lni-calendar"></i></span>
+                <div><span>Escolhe o momento</span><h4 id="reservation-step-time">Quando queres reservar?</h4><p>A data e a hora ficam sujeitas a confirmação.</p></div>
+              </div>
+              <div class="reservation-datetime-grid">
+                <label><span>Data</span><span class="reservation-input-shell"><i class="lni-calendar" aria-hidden="true"></i><input type="date" name="date" required></span></label>
+                <label><span>Hora</span><span class="reservation-input-shell"><i class="lni-alarm-clock" aria-hidden="true"></i><input type="time" name="time" required step="900"></span></label>
+              </div>
+              <div class="reservation-step-actions"><button class="btn btn-border" type="button" data-reservation-back><i class="lni-arrow-left" aria-hidden="true"></i> Voltar</button><button class="btn btn-common" type="button" data-reservation-next>Continuar <i class="lni-arrow-right" aria-hidden="true"></i></button></div>
+            </section>
+            <section class="reservation-step" data-reservation-step="2" aria-labelledby="reservation-step-name" hidden>
+              <div class="reservation-step-copy">
+                <span class="reservation-step-icon" aria-hidden="true"><i class="lni-user"></i></span>
+                <div><span>Último passo</span><h4 id="reservation-step-name">Em nome de quem?</h4><p>Confirma os detalhes antes de abrir o WhatsApp.</p></div>
+              </div>
+              <div class="reservation-final-fields">
+                <label><span>Nome da reserva</span><input type="text" name="name" autocomplete="name" required maxlength="80" placeholder="O teu nome"></label>
+                <label><span>Telefone <small>(opcional)</small></span><input type="tel" name="phone" autocomplete="tel" maxlength="24" placeholder="+351 900 000 000"></label>
+                <label class="reservation-notes"><span>Observações <small>(opcional)</small></span><textarea name="notes" rows="2" maxlength="300" placeholder="Cadeira de bebé, alergias ou outro pedido"></textarea></label>
+              </div>
+              <div class="reservation-summary" data-reservation-summary aria-live="polite"></div>
+              <div class="reservation-step-actions"><button class="btn btn-border" type="button" data-reservation-back><i class="lni-arrow-left" aria-hidden="true"></i> Voltar</button><button class="btn btn-common whatsapp-reservation-submit" type="submit"><i class="lni-whatsapp" aria-hidden="true"></i>Enviar pelo WhatsApp</button></div>
+              <p class="reservation-disclaimer">Ao confirmar, abrimos o WhatsApp com o pedido preenchido. A reserva só fica confirmada após resposta do estabelecimento.</p>
+            </section>
+          </form>
+        </dialog>
       </div>
     </section>
     <section id="counter" class="restaurant-stats section-padding">
@@ -2157,7 +2227,7 @@
     </section>
     </main>
 
-    <nav class="mobile-action-bar" aria-label="Ações rápidas"><a href="tel:960000255"><i class="lni-phone-handset"></i><span>Ligar</span></a><a href="menu/"><i class="lni-dinner"></i><span>Menu</span></a><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span>Direções</span></a></nav>
+    <nav class="mobile-action-bar" aria-label="Ações rápidas"><a href="tel:960000255"><i class="lni-phone-handset"></i><span>Ligar</span></a><a href="https://wa.me/351960000255" target="_blank" rel="noopener"><i class="lni-whatsapp"></i><span>WhatsApp</span></a><a href="menu/"><i class="lni-dinner"></i><span>Menu</span></a><a href="https://maps.google.com/?cid=9674207424615124378&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener"><i class="lni-map-marker"></i><span>Direções</span></a></nav>
 
     <div class="copyright">
       <div class="container">
