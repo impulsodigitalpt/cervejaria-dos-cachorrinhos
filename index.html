@@ -11,7 +11,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cervejaria dos Cachorrinhos | Petiscos no Porto">
     <meta name="twitter:description" content="Cachorrinhos, francesinhas, pregos e petiscos na Estrada da Circunvalação. Consulte o menu e reserve pelo WhatsApp.">
-    <meta name="site-content-hash" content="714f310a38ba6285e719744575736e857a53d06f2b327b2df725b0e9e1ebfc7d">
+    <meta name="site-content-hash" content="7dcf5539110c08a97d968506ed736b47c3523ed46bc5dc9e4a55766aa0e01c5d">
     <meta property="og:image" content="https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png">
     <meta name="twitter:image" content="https://cervejariadoscachorrinhos.pt/assets/generated/og-cervejaria-dos-cachorrinhos.png">
     <meta name="theme-color" content="#2b160b">
@@ -894,8 +894,7 @@
       .reservation-input-shell { align-items: center; display: flex; position: relative; }
       .reservation-input-shell > i { color: var(--site-primary); font-size: 20px; left: 16px; pointer-events: none; position: absolute; z-index: 1; }
       .reservation-input-shell input { font-size: 17px; font-weight: 700; padding-left: 48px; }
-      .reservation-final-fields { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
-      .reservation-final-fields .reservation-notes { grid-column: 1 / -1; }
+      .reservation-final-fields { display: grid; gap: 14px; grid-template-columns: 1fr; }
       .reservation-summary {
         background: color-mix(in srgb, var(--site-primary) 7%, #fff);
         border: 1px solid color-mix(in srgb, var(--site-primary) 18%, #dce8df);
@@ -1774,7 +1773,6 @@
         .reservation-people-grid button { min-height: 70px; }
         .reservation-datetime-grid,
         .reservation-final-fields { grid-template-columns: 1fr; }
-        .reservation-final-fields .reservation-notes { grid-column: auto; }
         .reservation-step-actions { align-items: stretch; }
         .reservation-step-actions .btn { min-width: 0; padding-left: 16px; padding-right: 16px; }
         .reservation-step-actions .whatsapp-reservation-submit { flex: 1; }
@@ -2175,8 +2173,6 @@
               </div>
               <div class="reservation-final-fields">
                 <label><span>Nome da reserva</span><input type="text" name="name" autocomplete="name" required maxlength="80" placeholder="O teu nome"></label>
-                <label><span>Telefone <small>(opcional)</small></span><input type="tel" name="phone" autocomplete="tel" maxlength="24" placeholder="+351 900 000 000"></label>
-                <label class="reservation-notes"><span>Observações <small>(opcional)</small></span><textarea name="notes" rows="2" maxlength="300" placeholder="Cadeira de bebé, alergias ou outro pedido"></textarea></label>
               </div>
               <div class="reservation-summary" data-reservation-summary aria-live="polite"></div>
               <div class="reservation-step-actions"><button class="btn btn-border" type="button" data-reservation-back><i class="lni-arrow-left" aria-hidden="true"></i> Voltar</button><button class="btn btn-common whatsapp-reservation-submit" type="submit"><i class="lni-whatsapp" aria-hidden="true"></i>Enviar pelo WhatsApp</button></div>
@@ -2469,10 +2465,6 @@
               "Hora: " + data.get("time"),
               "Pessoas: " + data.get("people")
             ];
-            var phone = String(data.get("phone") || "").trim();
-            var notes = String(data.get("notes") || "").trim();
-            if (phone) lines.splice(4, 0, "Telefone: " + phone);
-            if (notes) lines.push("Observações: " + notes);
             lines.push("", "Aguardo confirmação. Obrigado!");
             var number = form.getAttribute("data-whatsapp-number");
             window.open("https://wa.me/" + number + "?text=" + encodeURIComponent(lines.join("\n")), "_blank", "noopener,noreferrer");
